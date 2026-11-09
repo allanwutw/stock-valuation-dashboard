@@ -12,51 +12,291 @@
     }
   },
   {
-    "symbol": "2382.TW",
-    "name": "QUANTA COMPUTER",
-    "current_price": 296.5,
-    "fair_value": 466.68,
-    "upside_percent": 57.4,
+    "symbol": "2317.TW",
+    "name": "HON HAI PRECISION INDUSTRY",
+    "current_price": 239.0,
+    "fair_value": 342.87,
+    "upside_percent": 43.46,
     "models": {
-      "pe_multiples": 296.5,
-      "pb_multiples": 296.5,
-      "dcf_5yr": 807.05
+      "pe_multiples": 239.0,
+      "pb_multiples": 239.0,
+      "dcf_5yr": 550.6
+    }
+  },
+  {
+    "symbol": "2454.TW",
+    "name": "MEDIATEK INC",
+    "current_price": 3725.0,
+    "fair_value": 3221.85,
+    "upside_percent": -13.51,
+    "models": {
+      "pe_multiples": 3725.0,
+      "pb_multiples": 3725.0,
+      "dcf_5yr": 2215.56
+    }
+  },
+  {
+    "symbol": "2308.TW",
+    "name": "DELTA ELECTRONIC",
+    "current_price": 1160.0,
+    "fair_value": 1178.69,
+    "upside_percent": 1.61,
+    "models": {
+      "pe_multiples": 1160.0,
+      "pb_multiples": 1160.0,
+      "dcf_5yr": 1216.07
+    }
+  },
+  {
+    "symbol": "2881.TW",
+    "name": "FUBON FINANCIAL HLDG CO LTD",
+    "current_price": 153.5,
+    "fair_value": 200.01,
+    "upside_percent": 30.3,
+    "models": {
+      "pe_multiples": 153.5,
+      "pb_multiples": 153.5,
+      "dcf_5yr": 293.04
+    }
+  },
+  {
+    "symbol": "2882.TW",
+    "name": "CATHAY FINANCIAL HLDG CO",
+    "current_price": 111.0,
+    "fair_value": 156.07,
+    "upside_percent": 40.6,
+    "models": {
+      "pe_multiples": 111.0,
+      "pb_multiples": 111.0,
+      "dcf_5yr": 246.21
+    }
+  },
+  {
+    "symbol": "2412.TW",
+    "name": "CHUNGHWA TELECOM",
+    "current_price": 159.0,
+    "fair_value": 135.33,
+    "upside_percent": -14.89,
+    "models": {
+      "pe_multiples": 159.0,
+      "pb_multiples": 159.0,
+      "dcf_5yr": 87.99
+    }
+  },
+  {
+    "symbol": "2891.TW",
+    "name": "CTBC FINANCIAL HOLDINGS COMPANY",
+    "current_price": 75.9,
+    "fair_value": 79.62,
+    "upside_percent": 4.9,
+    "models": {
+      "pe_multiples": 75.9,
+      "pb_multiples": 75.9,
+      "dcf_5yr": 87.05
+    }
+  },
+  {
+    "symbol": "3711.TW",
+    "name": "ASE TECHNOLOGY HOLDING CO LTD",
+    "current_price": 561.0,
+    "fair_value": 574.24,
+    "upside_percent": 2.36,
+    "models": {
+      "pe_multiples": 561.0,
+      "pb_multiples": 561.0,
+      "dcf_5yr": 600.72
+    }
+  },
+  {
+    "symbol": "1301.TW",
+    "name": "FORMOSA PLASTIC",
+    "current_price": 68.9,
+    "fair_value": 66.05,
+    "upside_percent": -4.14,
+    "models": {
+      "pe_multiples": 68.9,
+      "pb_multiples": 68.9,
+      "dcf_5yr": 60.36
+    }
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "current_price": 349.77,
+    "fair_value": 315.54,
+    "upside_percent": -9.79,
+    "models": {
+      "pe_multiples": 349.77,
+      "pb_multiples": 349.77,
+      "dcf_5yr": 247.07
     }
   },
   {
     "symbol": "MSFT",
     "name": "Microsoft Corporation",
-    "current_price": 542.715,
-    "fair_value": 595.46,
-    "upside_percent": 9.72,
+    "current_price": 544.52,
+    "fair_value": 596.67,
+    "upside_percent": 9.58,
     "models": {
-      "pe_multiples": 542.72,
-      "pb_multiples": 542.71,
+      "pe_multiples": 544.52,
+      "pb_multiples": 544.52,
       "dcf_5yr": 700.96
     }
   },
   {
     "symbol": "NVDA",
     "name": "NVIDIA Corporation",
-    "current_price": 177.68,
-    "fair_value": 214.91,
-    "upside_percent": 20.95,
+    "current_price": 178.065,
+    "fair_value": 215.17,
+    "upside_percent": 20.84,
     "models": {
-      "pe_multiples": 177.68,
-      "pb_multiples": 177.68,
+      "pe_multiples": 178.07,
+      "pb_multiples": 178.07,
       "dcf_5yr": 289.38
     }
   },
   {
-    "symbol": "AAPL",
-    "name": "Apple Inc.",
-    "current_price": 350.215,
-    "fair_value": 315.83,
-    "upside_percent": -9.82,
+    "symbol": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "current_price": 269.06,
+    "fair_value": 256.8,
+    "upside_percent": -4.56,
     "models": {
-      "pe_multiples": 350.21,
-      "pb_multiples": 350.21,
-      "dcf_5yr": 247.07
+      "pe_multiples": 269.05,
+      "pb_multiples": 269.05,
+      "dcf_5yr": 232.3
+    }
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc.",
+    "current_price": 291.72,
+    "fair_value": 314.35,
+    "upside_percent": 7.76,
+    "models": {
+      "pe_multiples": 291.72,
+      "pb_multiples": 291.72,
+      "dcf_5yr": 359.62
+    }
+  },
+  {
+    "symbol": "META",
+    "name": "Meta Platforms, Inc.",
+    "current_price": 642.13,
+    "fair_value": 740.57,
+    "upside_percent": 15.33,
+    "models": {
+      "pe_multiples": 642.13,
+      "pb_multiples": 642.13,
+      "dcf_5yr": 937.44
+    }
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "current_price": 377.86,
+    "fair_value": 263.0,
+    "upside_percent": -30.4,
+    "models": {
+      "pe_multiples": 377.86,
+      "pb_multiples": 377.86,
+      "dcf_5yr": 33.29
+    }
+  },
+  {
+    "symbol": "BRK-B",
+    "name": "Berkshire Hathaway Inc. New",
+    "current_price": 569.69,
+    "fair_value": 628.68,
+    "upside_percent": 10.35,
+    "models": {
+      "pe_multiples": 569.69,
+      "pb_multiples": 569.69,
+      "dcf_5yr": 746.66
+    }
+  },
+  {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "current_price": 396.475,
+    "fair_value": 477.97,
+    "upside_percent": 20.55,
+    "models": {
+      "pe_multiples": 396.48,
+      "pb_multiples": 396.47,
+      "dcf_5yr": 640.96
+    }
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "current_price": 280.315,
+    "fair_value": 267.24,
+    "upside_percent": -4.66,
+    "models": {
+      "pe_multiples": 280.32,
+      "pb_multiples": 280.31,
+      "dcf_5yr": 241.09
+    }
+  },
+  {
+    "symbol": "JPM",
+    "name": "JP Morgan Chase & Co.",
+    "current_price": 342.51,
+    "fair_value": 373.11,
+    "upside_percent": 8.93,
+    "models": {
+      "pe_multiples": 342.51,
+      "pb_multiples": 342.51,
+      "dcf_5yr": 434.31
+    }
+  },
+  {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "current_price": 424.02,
+    "fair_value": 432.92,
+    "upside_percent": 2.1,
+    "models": {
+      "pe_multiples": 424.02,
+      "pb_multiples": 424.02,
+      "dcf_5yr": 450.72
+    }
+  },
+  {
+    "symbol": "XOM",
+    "name": "ExxonMobil Holdings Corporation",
+    "current_price": 165.3301,
+    "fair_value": 228.75,
+    "upside_percent": 38.36,
+    "models": {
+      "pe_multiples": 165.33,
+      "pb_multiples": 165.33,
+      "dcf_5yr": 355.6
+    }
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble Company (The)",
+    "current_price": 167.33,
+    "fair_value": 159.41,
+    "upside_percent": -4.73,
+    "models": {
+      "pe_multiples": 167.33,
+      "pb_multiples": 167.33,
+      "dcf_5yr": 143.58
+    }
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "current_price": 658.47,
+    "fair_value": 641.07,
+    "upside_percent": -2.64,
+    "models": {
+      "pe_multiples": 658.47,
+      "pb_multiples": 658.47,
+      "dcf_5yr": 606.28
     }
   }
 ]
