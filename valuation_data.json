@@ -5,14 +5,16 @@
     "name": "台積電",
     "sector": "科技半導體",
     "current_price": 2235.0,
-    "fair_value": 3186.53,
-    "upside_percent": 42.57,
+    "fair_value": 2860.67,
+    "upside_percent": 27.99,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 2235.0,
       "pb_multiples": 2235.0,
       "dcf_5yr": 3732.72,
+      "ddm_model": 576.8,
+      "ev_sales": 953.47,
       "analyst_target": 3409.8
     }
   },
@@ -22,14 +24,16 @@
     "name": "鴻海",
     "sector": "科技半導體",
     "current_price": 239.0,
-    "fair_value": 410.38,
-    "upside_percent": 71.71,
+    "fair_value": 388.2,
+    "upside_percent": 62.43,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 239.0,
       "pb_multiples": 239.0,
       "dcf_5yr": 586.08,
+      "ddm_model": 147.7,
+      "ev_sales": 243.01,
       "analyst_target": 347.5
     }
   },
@@ -39,14 +43,16 @@
     "name": "聯發科",
     "sector": "科技半導體",
     "current_price": 3725.0,
-    "fair_value": 3928.49,
-    "upside_percent": 5.46,
+    "fair_value": 3606.04,
+    "upside_percent": -3.19,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 3725.0,
       "pb_multiples": 3725.0,
       "dcf_5yr": 2434.33,
+      "ddm_model": 1102.1,
+      "ev_sales": 1944.87,
       "analyst_target": 6124.1924
     }
   },
@@ -56,14 +62,16 @@
     "name": "台達電",
     "sector": "科技半導體",
     "current_price": 1160.0,
-    "fair_value": 1528.91,
-    "upside_percent": 31.8,
+    "fair_value": 1466.52,
+    "upside_percent": 26.42,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 1160.0,
       "pb_multiples": 1160.0,
       "dcf_5yr": 1216.07,
+      "ddm_model": 238.96,
+      "ev_sales": 1147.68,
       "analyst_target": 2314.9546
     }
   },
@@ -73,14 +81,16 @@
     "name": "富邦金",
     "sector": "金融保險",
     "current_price": 153.5,
-    "fair_value": 150.36,
-    "upside_percent": -2.05,
+    "fair_value": 123.98,
+    "upside_percent": -19.23,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 153.5,
       "pb_multiples": 153.5,
       "dcf_5yr": 293.04,
+      "ddm_model": 87.55,
+      "ev_sales": 124.91,
       "analyst_target": 137.80455
     }
   },
@@ -90,14 +100,16 @@
     "name": "國泰金",
     "sector": "金融保險",
     "current_price": 111.0,
-    "fair_value": 112.8,
-    "upside_percent": 1.62,
+    "fair_value": 97.24,
+    "upside_percent": -12.4,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 111.0,
       "pb_multiples": 111.0,
       "dcf_5yr": 246.21,
+      "ddm_model": 72.1,
+      "ev_sales": 77.02,
       "analyst_target": 119.98
     }
   },
@@ -107,14 +119,16 @@
     "name": "中華電",
     "sector": "通訊服務",
     "current_price": 159.0,
-    "fair_value": 123.85,
-    "upside_percent": -22.11,
+    "fair_value": 128.01,
+    "upside_percent": -19.49,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 159.0,
       "pb_multiples": 159.0,
       "dcf_5yr": 87.99,
+      "ddm_model": 107.12,
+      "ev_sales": 161.09,
       "analyst_target": 136.5
     }
   },
@@ -124,14 +138,16 @@
     "name": "中信金",
     "sector": "金融保險",
     "current_price": 75.9,
-    "fair_value": 75.23,
-    "upside_percent": -0.88,
+    "fair_value": 65.47,
+    "upside_percent": -13.74,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 75.9,
       "pb_multiples": 75.9,
       "dcf_5yr": 77.33,
+      "ddm_model": 51.5,
+      "ev_sales": 79.25,
       "analyst_target": 72.57273
     }
   },
@@ -141,14 +157,16 @@
     "name": "日月光投控",
     "sector": "科技半導體",
     "current_price": 561.0,
-    "fair_value": 664.42,
-    "upside_percent": 18.43,
+    "fair_value": 659.74,
+    "upside_percent": 17.6,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 561.0,
       "pb_multiples": 561.0,
       "dcf_5yr": 600.72,
+      "ddm_model": 135.55,
+      "ev_sales": 640.29,
       "analyst_target": 852.7778
     }
   },
@@ -158,14 +176,16 @@
     "name": "台塑",
     "sector": "綜合產業",
     "current_price": 68.9,
-    "fair_value": 68.89,
-    "upside_percent": -0.01,
+    "fair_value": 62.94,
+    "upside_percent": -8.65,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 68.9,
       "pb_multiples": 68.9,
       "dcf_5yr": 66.22,
+      "ddm_model": 10.3,
+      "ev_sales": 50.95,
       "analyst_target": 72.42857
     }
   },
@@ -175,14 +195,16 @@
     "name": "中鋼",
     "sector": "綜合產業",
     "current_price": 18.55,
-    "fair_value": 8.73,
-    "upside_percent": -52.94,
-    "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "fair_value": 7.63,
+    "upside_percent": -58.87,
+    "confidence": "中",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": -3.15,
       "pb_multiples": 18.55,
       "dcf_5yr": null,
+      "ddm_model": 3.09,
+      "ev_sales": 35.14,
       "analyst_target": 20.6
     }
   },
@@ -192,14 +214,16 @@
     "name": "兆豐金",
     "sector": "金融保險",
     "current_price": 52.8,
-    "fair_value": 51.7,
-    "upside_percent": -2.08,
+    "fair_value": 45.0,
+    "upside_percent": -14.77,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 52.8,
       "pb_multiples": 52.8,
       "dcf_5yr": 74.23,
+      "ddm_model": 36.05,
+      "ev_sales": 28.25,
       "analyst_target": 47.31
     }
   },
@@ -209,14 +233,16 @@
     "name": "合庫金",
     "sector": "金融保險",
     "current_price": 27.8,
-    "fair_value": 27.8,
-    "upside_percent": 0.0,
+    "fair_value": 22.14,
+    "upside_percent": -20.36,
     "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 27.8,
       "pb_multiples": 27.8,
       "dcf_5yr": 48.29,
+      "ddm_model": 16.48,
+      "ev_sales": 23.29,
       "analyst_target": null
     }
   },
@@ -226,14 +252,16 @@
     "name": "統一",
     "sector": "必需消費",
     "current_price": 76.7,
-    "fair_value": 86.05,
-    "upside_percent": 12.19,
+    "fair_value": 82.07,
+    "upside_percent": 7.0,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 76.7,
       "pb_multiples": 76.7,
       "dcf_5yr": 95.59,
+      "ddm_model": 61.8,
+      "ev_sales": 119.82,
       "analyst_target": 82.68182
     }
   },
@@ -243,14 +271,16 @@
     "name": "統一超",
     "sector": "必需消費",
     "current_price": 211.5,
-    "fair_value": 234.61,
-    "upside_percent": 10.93,
+    "fair_value": 224.99,
+    "upside_percent": 6.38,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 211.5,
       "pb_multiples": 211.5,
       "dcf_5yr": 232.23,
+      "ddm_model": 185.4,
+      "ev_sales": 314.8,
       "analyst_target": 260.9091
     }
   },
@@ -260,14 +290,16 @@
     "name": "玉山金",
     "sector": "金融保險",
     "current_price": 47.3,
-    "fair_value": 45.86,
-    "upside_percent": -3.04,
+    "fair_value": 38.47,
+    "upside_percent": -18.67,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 47.3,
       "pb_multiples": 47.3,
       "dcf_5yr": 77.56,
+      "ddm_model": 28.84,
+      "ev_sales": 29.45,
       "analyst_target": 40.08333
     }
   },
@@ -277,14 +309,16 @@
     "name": "中租-KY",
     "sector": "金融保險",
     "current_price": 103.0,
-    "fair_value": 108.52,
-    "upside_percent": 5.36,
+    "fair_value": 115.12,
+    "upside_percent": 11.77,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 103.0,
       "pb_multiples": 103.0,
       "dcf_5yr": 307.12,
+      "ddm_model": 119.48,
+      "ev_sales": 169.44,
       "analyst_target": 130.61996
     }
   },
@@ -294,14 +328,16 @@
     "name": "聯詠",
     "sector": "科技半導體",
     "current_price": 486.5,
-    "fair_value": 674.66,
-    "upside_percent": 38.68,
+    "fair_value": 641.26,
+    "upside_percent": 31.81,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 486.5,
       "pb_multiples": 486.5,
       "dcf_5yr": 933.24,
+      "ddm_model": 473.8,
+      "ev_sales": 423.23,
       "analyst_target": 518.05554
     }
   },
@@ -311,14 +347,16 @@
     "name": "華碩",
     "sector": "科技半導體",
     "current_price": 860.0,
-    "fair_value": 1177.76,
-    "upside_percent": 36.95,
+    "fair_value": 1143.56,
+    "upside_percent": 32.97,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 860.0,
       "pb_multiples": 860.0,
       "dcf_5yr": 1509.41,
+      "ddm_model": 865.2,
+      "ev_sales": 912.89,
       "analyst_target": 1053.3334
     }
   },
@@ -328,14 +366,16 @@
     "name": "廣達",
     "sector": "科技半導體",
     "current_price": 296.5,
-    "fair_value": 547.5,
-    "upside_percent": 84.65,
+    "fair_value": 518.92,
+    "upside_percent": 75.02,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 296.5,
       "pb_multiples": 296.5,
       "dcf_5yr": 823.88,
+      "ddm_model": 321.36,
+      "ev_sales": 326.22,
       "analyst_target": 430.0
     }
   },
@@ -345,14 +385,16 @@
     "name": "緯創",
     "sector": "科技半導體",
     "current_price": 168.5,
-    "fair_value": 312.71,
-    "upside_percent": 85.58,
+    "fair_value": 320.38,
+    "upside_percent": 90.14,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 168.5,
       "pb_multiples": 168.5,
       "dcf_5yr": 448.16,
+      "ddm_model": 113.3,
+      "ev_sales": 348.78,
       "analyst_target": 276.3125
     }
   },
@@ -362,14 +404,16 @@
     "name": "長榮鋼",
     "sector": "工業製造",
     "current_price": 75.2,
-    "fair_value": 111.31,
-    "upside_percent": 48.02,
+    "fair_value": 106.24,
+    "upside_percent": 41.28,
     "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 75.2,
       "pb_multiples": 75.2,
       "dcf_5yr": 138.4,
+      "ddm_model": 133.9,
+      "ev_sales": 77.0,
       "analyst_target": null
     }
   },
@@ -379,14 +423,16 @@
     "name": "台泥",
     "sector": "綜合產業",
     "current_price": 26.8,
-    "fair_value": 4.25,
-    "upside_percent": -84.14,
-    "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "fair_value": 5.83,
+    "upside_percent": -78.25,
+    "confidence": "中",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": -19.5,
       "pb_multiples": 26.8,
       "dcf_5yr": null,
+      "ddm_model": 16.48,
+      "ev_sales": 39.76,
       "analyst_target": 28.0
     }
   },
@@ -396,14 +442,16 @@
     "name": "佳格",
     "sector": "必需消費",
     "current_price": 26.2,
-    "fair_value": 43.21,
-    "upside_percent": 64.92,
+    "fair_value": 37.54,
+    "upside_percent": 43.28,
     "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 26.2,
       "pb_multiples": 26.2,
       "dcf_5yr": 55.97,
+      "ddm_model": 27.6,
+      "ev_sales": 20.98,
       "analyst_target": null
     }
   },
@@ -413,14 +461,16 @@
     "name": "遠東新",
     "sector": "非必需消費",
     "current_price": 27.25,
-    "fair_value": 29.06,
-    "upside_percent": 6.64,
+    "fair_value": 28.25,
+    "upside_percent": 3.67,
     "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 27.25,
       "pb_multiples": 27.25,
       "dcf_5yr": 30.42,
+      "ddm_model": 25.75,
+      "ev_sales": 86.23,
       "analyst_target": null
     }
   },
@@ -430,14 +480,16 @@
     "name": "長榮",
     "sector": "工業製造",
     "current_price": 245.5,
-    "fair_value": 476.41,
-    "upside_percent": 94.06,
+    "fair_value": 426.44,
+    "upside_percent": 73.7,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 245.5,
       "pb_multiples": 245.5,
       "dcf_5yr": 803.21,
+      "ddm_model": 329.6,
+      "ev_sales": 260.7,
       "analyst_target": 271.6
     }
   },
@@ -447,14 +499,16 @@
     "name": "陽明",
     "sector": "工業製造",
     "current_price": 57.5,
-    "fair_value": 71.18,
-    "upside_percent": 23.79,
+    "fair_value": 65.85,
+    "upside_percent": 14.52,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 57.5,
       "pb_multiples": 57.5,
       "dcf_5yr": 83.38,
+      "ddm_model": 41.2,
+      "ev_sales": 26.01,
       "analyst_target": 68.6
     }
   },
@@ -464,14 +518,16 @@
     "name": "萬海",
     "sector": "工業製造",
     "current_price": 107.0,
-    "fair_value": 182.44,
-    "upside_percent": 70.5,
+    "fair_value": 158.31,
+    "upside_percent": 47.95,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 107.0,
       "pb_multiples": 107.0,
       "dcf_5yr": 273.24,
+      "ddm_model": 61.8,
+      "ev_sales": 83.42,
       "analyst_target": 136.8
     }
   },
@@ -481,14 +537,16 @@
     "name": "華南金",
     "sector": "金融保險",
     "current_price": 49.6,
-    "fair_value": 47.16,
-    "upside_percent": -4.92,
+    "fair_value": 38.44,
+    "upside_percent": -22.5,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 49.6,
       "pb_multiples": 49.6,
       "dcf_5yr": 69.88,
+      "ddm_model": 27.81,
+      "ev_sales": 27.48,
       "analyst_target": 37.4
     }
   },
@@ -498,14 +556,16 @@
     "name": "開發金",
     "sector": "金融保險",
     "current_price": 34.55,
-    "fair_value": 35.77,
-    "upside_percent": 3.53,
+    "fair_value": 30.19,
+    "upside_percent": -12.62,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 34.55,
       "pb_multiples": 34.55,
       "dcf_5yr": 63.66,
+      "ddm_model": 20.6,
+      "ev_sales": 39.13,
       "analyst_target": 40.66667
     }
   },
@@ -515,14 +575,16 @@
     "name": "元大金",
     "sector": "金融保險",
     "current_price": 69.4,
-    "fair_value": 68.81,
-    "upside_percent": -0.85,
+    "fair_value": 55.31,
+    "upside_percent": -20.3,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 69.4,
       "pb_multiples": 69.4,
       "dcf_5yr": 96.22,
+      "ddm_model": 35.64,
+      "ev_sales": 46.53,
       "analyst_target": 66.45
     }
   },
@@ -532,14 +594,16 @@
     "name": "台新金",
     "sector": "金融保險",
     "current_price": 39.95,
-    "fair_value": 39.28,
-    "upside_percent": -1.68,
+    "fair_value": 31.54,
+    "upside_percent": -21.05,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 39.95,
       "pb_multiples": 39.95,
       "dcf_5yr": 71.71,
+      "ddm_model": 20.6,
+      "ev_sales": 33.13,
       "analyst_target": 36.58257
     }
   },
@@ -549,14 +613,16 @@
     "name": "第一金",
     "sector": "金融保險",
     "current_price": 40.95,
-    "fair_value": 40.35,
-    "upside_percent": -1.47,
+    "fair_value": 34.68,
+    "upside_percent": -15.31,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 40.95,
       "pb_multiples": 40.95,
       "dcf_5yr": 68.41,
+      "ddm_model": 26.78,
+      "ev_sales": 27.39,
       "analyst_target": 37.94
     }
   },
@@ -566,14 +632,16 @@
     "name": "台灣大哥大",
     "sector": "非必需消費",
     "current_price": 131.0,
-    "fair_value": 117.32,
-    "upside_percent": -10.44,
+    "fair_value": 117.59,
+    "upside_percent": -10.24,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 131.0,
       "pb_multiples": 131.0,
       "dcf_5yr": 102.42,
+      "ddm_model": 97.64,
+      "ev_sales": 158.89,
       "analyst_target": 123.5
     }
   },
@@ -583,14 +651,16 @@
     "name": "大聯大",
     "sector": "科技半導體",
     "current_price": 90.4,
-    "fair_value": 240.17,
-    "upside_percent": 165.67,
+    "fair_value": 240.95,
+    "upside_percent": 166.54,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 90.4,
       "pb_multiples": 90.4,
       "dcf_5yr": 424.38,
+      "ddm_model": 74.98,
+      "ev_sales": 224.9,
       "analyst_target": 144.33333
     }
   },
@@ -600,14 +670,16 @@
     "name": "遠傳",
     "sector": "通訊服務",
     "current_price": 106.0,
-    "fair_value": 99.66,
-    "upside_percent": -5.98,
+    "fair_value": 98.47,
+    "upside_percent": -7.1,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 106.0,
       "pb_multiples": 106.0,
       "dcf_5yr": 89.41,
+      "ddm_model": 78.49,
+      "ev_sales": 118.56,
       "analyst_target": 107.0
     }
   },
@@ -617,14 +689,16 @@
     "name": "上海商銀",
     "sector": "金融保險",
     "current_price": 51.4,
-    "fair_value": 51.52,
-    "upside_percent": 0.23,
+    "fair_value": 45.79,
+    "upside_percent": -10.91,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 51.4,
       "pb_multiples": 51.4,
       "dcf_5yr": 114.14,
+      "ddm_model": 37.08,
+      "ev_sales": 46.62,
       "analyst_target": 52.0
     }
   },
@@ -634,14 +708,16 @@
     "name": "台塑化",
     "sector": "能源原物料",
     "current_price": 88.4,
-    "fair_value": 93.83,
-    "upside_percent": 6.14,
+    "fair_value": 85.56,
+    "upside_percent": -3.21,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 88.4,
       "pb_multiples": 88.4,
       "dcf_5yr": 85.56,
+      "ddm_model": 24.72,
+      "ev_sales": 43.83,
       "analyst_target": 110.28571
     }
   },
@@ -651,14 +727,16 @@
     "name": "豐泰",
     "sector": "非必需消費",
     "current_price": 68.1,
-    "fair_value": 69.85,
-    "upside_percent": 2.57,
+    "fair_value": 70.92,
+    "upside_percent": 4.14,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 68.1,
       "pb_multiples": 68.1,
       "dcf_5yr": 68.81,
+      "ddm_model": 84.46,
+      "ev_sales": 71.0,
       "analyst_target": 72.97692
     }
   },
@@ -668,14 +746,16 @@
     "name": "智邦",
     "sector": "科技半導體",
     "current_price": 1405.0,
-    "fair_value": 2420.56,
-    "upside_percent": 72.28,
+    "fair_value": 2261.17,
+    "upside_percent": 60.94,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 1405.0,
       "pb_multiples": 1405.0,
       "dcf_5yr": 2542.26,
+      "ddm_model": 309.0,
+      "ev_sales": 1344.4,
       "analyst_target": 3273.8572
     }
   },
@@ -685,14 +765,16 @@
     "name": "瑞昱",
     "sector": "科技半導體",
     "current_price": 743.0,
-    "fair_value": 879.78,
-    "upside_percent": 18.41,
+    "fair_value": 845.58,
+    "upside_percent": 13.81,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 743.0,
       "pb_multiples": 743.0,
       "dcf_5yr": 1042.29,
+      "ddm_model": 515.0,
+      "ev_sales": 633.72,
       "analyst_target": 799.8823
     }
   },
@@ -702,14 +784,16 @@
     "name": "大立光",
     "sector": "科技半導體",
     "current_price": 4925.0,
-    "fair_value": 5184.38,
-    "upside_percent": 5.27,
+    "fair_value": 4737.37,
+    "upside_percent": -3.81,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 4925.0,
       "pb_multiples": 4925.0,
       "dcf_5yr": 3793.97,
+      "ddm_model": 1926.1,
+      "ev_sales": 2358.8,
       "analyst_target": 7297.6313
     }
   },
@@ -722,11 +806,13 @@
     "fair_value": 0,
     "upside_percent": 0,
     "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": null,
       "pb_multiples": null,
       "dcf_5yr": null,
+      "ddm_model": null,
+      "ev_sales": null,
       "analyst_target": null
     }
   },
@@ -736,14 +822,16 @@
     "name": "緯穎",
     "sector": "科技半導體",
     "current_price": 1645.0,
-    "fair_value": 2829.07,
-    "upside_percent": 71.98,
+    "fair_value": 2693.56,
+    "upside_percent": 63.74,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 1645.0,
       "pb_multiples": 1645.0,
       "dcf_5yr": 3796.01,
+      "ddm_model": 997.25,
+      "ev_sales": 1818.24,
       "analyst_target": 2723.8992
     }
   },
@@ -753,14 +841,16 @@
     "name": "南電",
     "sector": "科技半導體",
     "current_price": 933.0,
-    "fair_value": 967.09,
-    "upside_percent": 3.65,
+    "fair_value": 865.86,
+    "upside_percent": -7.2,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 933.0,
       "pb_multiples": 933.0,
       "dcf_5yr": 331.82,
+      "ddm_model": 41.2,
+      "ev_sales": 362.79,
       "analyst_target": 1848.2142
     }
   },
@@ -770,14 +860,16 @@
     "name": "南亞科",
     "sector": "科技半導體",
     "current_price": 370.0,
-    "fair_value": 726.85,
-    "upside_percent": 96.45,
+    "fair_value": 669.46,
+    "upside_percent": 80.94,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 370.0,
       "pb_multiples": 370.0,
       "dcf_5yr": 1045.59,
+      "ddm_model": 27.81,
+      "ev_sales": 308.79,
       "analyst_target": 658.7231
     }
   },
@@ -787,14 +879,16 @@
     "name": "欣興",
     "sector": "科技半導體",
     "current_price": 757.0,
-    "fair_value": 959.84,
-    "upside_percent": 26.8,
+    "fair_value": 892.83,
+    "upside_percent": 17.94,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 757.0,
       "pb_multiples": 757.0,
       "dcf_5yr": 761.32,
+      "ddm_model": 40.79,
+      "ev_sales": 535.2,
       "analyst_target": 1427.3684
     }
   },
@@ -804,14 +898,16 @@
     "name": "世芯-KY",
     "sector": "科技半導體",
     "current_price": 3110.0,
-    "fair_value": 3692.31,
-    "upside_percent": 18.72,
+    "fair_value": 3336.32,
+    "upside_percent": 7.28,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 3110.0,
       "pb_multiples": 3110.0,
       "dcf_5yr": 2768.72,
+      "ddm_model": 670.94,
+      "ev_sales": 1421.66,
       "analyst_target": 5506.0625
     }
   },
@@ -821,14 +917,16 @@
     "name": "矽力-KY",
     "sector": "科技半導體",
     "current_price": 427.5,
-    "fair_value": 452.71,
-    "upside_percent": 5.9,
+    "fair_value": 424.41,
+    "upside_percent": -0.72,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 427.5,
       "pb_multiples": 427.5,
       "dcf_5yr": 389.99,
+      "ddm_model": 52.53,
+      "ev_sales": 271.0,
       "analyst_target": 561.5594
     }
   },
@@ -838,14 +936,16 @@
     "name": "Apple Inc.",
     "sector": "科技半導體",
     "current_price": 350.69,
-    "fair_value": 306.17,
-    "upside_percent": -12.69,
+    "fair_value": 283.76,
+    "upside_percent": -19.09,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 350.69,
       "pb_multiples": 350.69,
       "dcf_5yr": 247.07,
+      "ddm_model": 22.25,
+      "ev_sales": 163.29,
       "analyst_target": 340.4655
     }
   },
@@ -855,14 +955,16 @@
     "name": "Microsoft Corporation",
     "sector": "科技半導體",
     "current_price": 545.18,
-    "fair_value": 634.78,
-    "upside_percent": 16.43,
+    "fair_value": 575.65,
+    "upside_percent": 5.59,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 545.18,
       "pb_multiples": 545.18,
       "dcf_5yr": 700.96,
+      "ddm_model": 80.75,
+      "ev_sales": 233.23,
       "analyst_target": 636.12427
     }
   },
@@ -872,14 +974,16 @@
     "name": "NVIDIA Corporation",
     "sector": "科技半導體",
     "current_price": 178.67,
-    "fair_value": 267.43,
-    "upside_percent": 49.68,
+    "fair_value": 237.04,
+    "upside_percent": 32.67,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 178.67,
       "pb_multiples": 178.67,
       "dcf_5yr": 289.38,
+      "ddm_model": 20.6,
+      "ev_sales": 62.4,
       "analyst_target": 326.91754
     }
   },
@@ -889,14 +993,16 @@
     "name": "Amazon.com, Inc.",
     "sector": "非必需消費",
     "current_price": 266.93,
-    "fair_value": 271.1,
-    "upside_percent": 1.56,
+    "fair_value": 268.73,
+    "upside_percent": 0.67,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 266.93,
       "pb_multiples": 266.93,
       "dcf_5yr": 232.3,
+      "ddm_model": null,
+      "ev_sales": 278.42,
       "analyst_target": 326.99017
     }
   },
@@ -906,14 +1012,16 @@
     "name": "Alphabet Inc.",
     "sector": "通訊服務",
     "current_price": 288.15,
-    "fair_value": 350.41,
-    "upside_percent": 21.61,
+    "fair_value": 305.03,
+    "upside_percent": 5.86,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 288.15,
       "pb_multiples": 288.15,
       "dcf_5yr": 359.62,
+      "ddm_model": 18.13,
+      "ev_sales": 193.94,
       "analyst_target": 400.37357
     }
   },
@@ -923,14 +1031,16 @@
     "name": "Meta Platforms, Inc.",
     "sector": "通訊服務",
     "current_price": 641.37,
-    "fair_value": 822.42,
-    "upside_percent": 28.23,
+    "fair_value": 712.13,
+    "upside_percent": 11.03,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 641.37,
       "pb_multiples": 641.37,
       "dcf_5yr": 937.44,
+      "ddm_model": 43.26,
+      "ev_sales": 475.93,
       "analyst_target": 850.1025
     }
   },
@@ -940,14 +1050,16 @@
     "name": "Tesla, Inc.",
     "sector": "非必需消費",
     "current_price": 378.05,
-    "fair_value": 250.66,
-    "upside_percent": -33.7,
+    "fair_value": 270.92,
+    "upside_percent": -28.34,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 378.05,
       "pb_multiples": 378.05,
       "dcf_5yr": 33.29,
+      "ddm_model": null,
+      "ev_sales": 160.06,
       "analyst_target": 413.10126
     }
   },
@@ -957,14 +1069,16 @@
     "name": "Berkshire Hathaway Inc. New",
     "sector": "金融保險",
     "current_price": 575.25,
-    "fair_value": 571.33,
-    "upside_percent": -0.68,
-    "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "fair_value": 568.72,
+    "upside_percent": -1.14,
+    "confidence": "中",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 575.25,
       "pb_multiples": 575.25,
       "dcf_5yr": 746.66,
+      "ddm_model": null,
+      "ev_sales": -159091.82,
       "analyst_target": 555.6667
     }
   },
@@ -974,14 +1088,16 @@
     "name": "UnitedHealth Group Incorporated",
     "sector": "醫療保健",
     "current_price": 397.62,
-    "fair_value": 518.66,
-    "upside_percent": 30.44,
+    "fair_value": 465.78,
+    "upside_percent": 17.14,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 397.62,
       "pb_multiples": 397.62,
       "dcf_5yr": 640.96,
+      "ddm_model": 191.17,
+      "ev_sales": 449.81,
       "analyst_target": 476.64
     }
   },
@@ -991,14 +1107,16 @@
     "name": "Johnson & Johnson",
     "sector": "醫療保健",
     "current_price": 282.11,
-    "fair_value": 264.89,
-    "upside_percent": -6.1,
+    "fair_value": 252.09,
+    "upside_percent": -10.64,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 282.11,
       "pb_multiples": 282.11,
       "dcf_5yr": 241.09,
+      "ddm_model": 110.42,
+      "ev_sales": 206.26,
       "analyst_target": 279.4091
     }
   },
@@ -1008,14 +1126,16 @@
     "name": "JP Morgan Chase & Co.",
     "sector": "金融保險",
     "current_price": 342.08,
-    "fair_value": 348.36,
-    "upside_percent": 1.84,
+    "fair_value": 265.91,
+    "upside_percent": -22.27,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 342.08,
       "pb_multiples": 342.08,
       "dcf_5yr": 434.31,
+      "ddm_model": 135.96,
+      "ev_sales": 241.43,
       "analyst_target": 373.47827
     }
   },
@@ -1025,14 +1145,16 @@
     "name": "Visa Inc.",
     "sector": "金融保險",
     "current_price": 422.16,
-    "fair_value": 426.99,
-    "upside_percent": 1.14,
+    "fair_value": 283.84,
+    "upside_percent": -32.76,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 422.16,
       "pb_multiples": 422.16,
       "dcf_5yr": 450.72,
+      "ddm_model": 64.27,
+      "ev_sales": 120.36,
       "analyst_target": 446.3346
     }
   },
@@ -1042,14 +1164,16 @@
     "name": "ExxonMobil Holdings Corporation",
     "sector": "能源原物料",
     "current_price": 164.73,
-    "fair_value": 247.17,
-    "upside_percent": 50.05,
+    "fair_value": 218.4,
+    "upside_percent": 32.58,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 164.73,
       "pb_multiples": 164.73,
       "dcf_5yr": 355.6,
+      "ddm_model": 88.17,
+      "ev_sales": 168.44,
       "analyst_target": 185.04546
     }
   },
@@ -1059,14 +1183,16 @@
     "name": "Procter & Gamble Company (The)",
     "sector": "必需消費",
     "current_price": 168.32,
-    "fair_value": 160.14,
-    "upside_percent": -4.86,
+    "fair_value": 154.17,
+    "upside_percent": -8.41,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 168.32,
       "pb_multiples": 168.32,
       "dcf_5yr": 143.58,
+      "ddm_model": 89.61,
+      "ev_sales": 175.12,
       "analyst_target": 174.04349
     }
   },
@@ -1076,14 +1202,16 @@
     "name": "Mastercard Incorporated",
     "sector": "金融保險",
     "current_price": 655.81,
-    "fair_value": 667.93,
-    "upside_percent": 1.85,
+    "fair_value": 434.28,
+    "upside_percent": -33.78,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 655.81,
       "pb_multiples": 655.81,
       "dcf_5yr": 606.28,
+      "ddm_model": 71.69,
+      "ev_sales": 204.73,
       "analyst_target": 716.38947
     }
   },
@@ -1093,14 +1221,16 @@
     "name": "Costco Wholesale Corporation",
     "sector": "必需消費",
     "current_price": 1066.18,
-    "fair_value": 899.54,
-    "upside_percent": -15.63,
+    "fair_value": 846.56,
+    "upside_percent": -20.6,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 1066.18,
       "pb_multiples": 1066.18,
       "dcf_5yr": 645.71,
+      "ddm_model": 121.13,
+      "ev_sales": 1026.33,
       "analyst_target": 1071.3243
     }
   },
@@ -1110,14 +1240,16 @@
     "name": "Home Depot, Inc. (The)",
     "sector": "非必需消費",
     "current_price": 353.42,
-    "fair_value": 343.56,
-    "upside_percent": -2.79,
+    "fair_value": 329.24,
+    "upside_percent": -6.84,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 353.42,
       "pb_multiples": 353.42,
       "dcf_5yr": 309.58,
+      "ddm_model": 191.99,
+      "ev_sales": 406.26,
       "analyst_target": 379.0
     }
   },
@@ -1127,14 +1259,16 @@
     "name": "Broadcom Inc.",
     "sector": "科技半導體",
     "current_price": 319.48,
-    "fair_value": 370.46,
-    "upside_percent": 15.96,
+    "fair_value": 327.56,
+    "upside_percent": 2.53,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 319.48,
       "pb_multiples": 319.48,
       "dcf_5yr": 286.46,
+      "ddm_model": 53.56,
+      "ev_sales": 93.85,
       "analyst_target": 533.4238
     }
   },
@@ -1144,14 +1278,16 @@
     "name": "Eli Lilly and Company",
     "sector": "醫療保健",
     "current_price": 1411.95,
-    "fair_value": 1310.47,
-    "upside_percent": -7.19,
+    "fair_value": 1207.87,
+    "upside_percent": -14.45,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 1411.95,
       "pb_multiples": 1411.95,
       "dcf_5yr": 1127.17,
+      "ddm_model": 142.55,
+      "ev_sales": 483.77,
       "analyst_target": 1453.4014
     }
   },
@@ -1161,14 +1297,16 @@
     "name": "Netflix, Inc.",
     "sector": "通訊服務",
     "current_price": 63.95,
-    "fair_value": 71.7,
-    "upside_percent": 12.12,
+    "fair_value": 69.83,
+    "upside_percent": 9.19,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 63.95,
       "pb_multiples": 63.95,
       "dcf_5yr": 67.71,
+      "ddm_model": null,
+      "ev_sales": 59.3,
       "analyst_target": 84.76326
     }
   },
@@ -1178,14 +1316,16 @@
     "name": "Advanced Micro Devices, Inc.",
     "sector": "科技半導體",
     "current_price": 508.58,
-    "fair_value": 418.62,
-    "upside_percent": -17.69,
+    "fair_value": 372.59,
+    "upside_percent": -26.74,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 508.58,
       "pb_multiples": 508.58,
       "dcf_5yr": 171.22,
+      "ddm_model": null,
+      "ev_sales": 139.25,
       "analyst_target": 658.5292
     }
   },
@@ -1195,14 +1335,16 @@
     "name": "AbbVie Inc.",
     "sector": "醫療保健",
     "current_price": 293.3,
-    "fair_value": 266.35,
-    "upside_percent": -9.19,
+    "fair_value": 253.61,
+    "upside_percent": -13.53,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 293.3,
       "pb_multiples": null,
       "dcf_5yr": 212.92,
+      "ddm_model": 142.55,
+      "ev_sales": 186.59,
       "analyst_target": 310.65384
     }
   },
@@ -1212,14 +1354,16 @@
     "name": "Salesforce, Inc.",
     "sector": "科技半導體",
     "current_price": 214.94,
-    "fair_value": 310.56,
-    "upside_percent": 44.49,
+    "fair_value": 300.2,
+    "upside_percent": 39.67,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 214.94,
       "pb_multiples": 214.94,
       "dcf_5yr": 399.87,
+      "ddm_model": 36.26,
+      "ev_sales": 231.6,
       "analyst_target": 287.0836
     }
   },
@@ -1229,14 +1373,16 @@
     "name": "Bank of America Corporation",
     "sector": "金融保險",
     "current_price": 50.55,
-    "fair_value": 52.94,
-    "upside_percent": 4.73,
+    "fair_value": 43.26,
+    "upside_percent": -14.42,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 50.55,
       "pb_multiples": 50.55,
       "dcf_5yr": 145.66,
+      "ddm_model": 26.37,
+      "ev_sales": 42.26,
       "analyst_target": 62.47727
     }
   },
@@ -1246,14 +1392,16 @@
     "name": "Chevron Corporation",
     "sector": "能源原物料",
     "current_price": 210.78,
-    "fair_value": 307.87,
-    "upside_percent": 46.06,
+    "fair_value": 276.37,
+    "upside_percent": 31.12,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 210.78,
       "pb_multiples": 210.78,
       "dcf_5yr": 429.0,
+      "ddm_model": 146.67,
+      "ev_sales": 223.46,
       "analyst_target": 243.45833
     }
   },
@@ -1263,14 +1411,16 @@
     "name": "Merck & Company, Inc.",
     "sector": "醫療保健",
     "current_price": 148.76,
-    "fair_value": 107.57,
-    "upside_percent": -27.69,
+    "fair_value": 109.68,
+    "upside_percent": -26.27,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 148.76,
       "pb_multiples": 148.76,
       "dcf_5yr": 36.22,
+      "ddm_model": 70.04,
+      "ev_sales": 136.2,
       "analyst_target": 161.525
     }
   },
@@ -1280,14 +1430,16 @@
     "name": "Pepsico, Inc.",
     "sector": "必需消費",
     "current_price": 141.88,
-    "fair_value": 146.42,
-    "upside_percent": 3.2,
+    "fair_value": 143.3,
+    "upside_percent": 1.0,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 141.88,
       "pb_multiples": 141.88,
       "dcf_5yr": 153.45,
+      "ddm_model": 121.95,
+      "ev_sales": 170.95,
       "analyst_target": 141.59091
     }
   },
@@ -1297,14 +1449,16 @@
     "name": "Adobe Inc.",
     "sector": "科技半導體",
     "current_price": 237.32,
-    "fair_value": 413.36,
-    "upside_percent": 74.18,
+    "fair_value": 390.21,
+    "upside_percent": 64.42,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 237.32,
       "pb_multiples": 237.32,
       "dcf_5yr": 655.23,
+      "ddm_model": null,
+      "ev_sales": 232.14,
       "analyst_target": 266.9097
     }
   },
@@ -1314,14 +1468,16 @@
     "name": "Thermo Fisher Scientific Inc",
     "sector": "醫療保健",
     "current_price": 721.63,
-    "fair_value": 720.9,
-    "upside_percent": -0.1,
+    "fair_value": 651.92,
+    "upside_percent": -9.66,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 721.63,
       "pb_multiples": 721.63,
       "dcf_5yr": 693.64,
+      "ddm_model": 38.73,
+      "ev_sales": 636.87,
       "analyst_target": 756.52
     }
   },
@@ -1331,14 +1487,16 @@
     "name": "Accenture plc",
     "sector": "科技半導體",
     "current_price": 254.37,
-    "fair_value": 292.52,
-    "upside_percent": 15.0,
+    "fair_value": 288.14,
+    "upside_percent": 13.28,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 254.37,
       "pb_multiples": 254.37,
       "dcf_5yr": 368.21,
+      "ddm_model": 140.9,
+      "ev_sales": 254.96,
       "analyst_target": 229.73792
     }
   },
@@ -1348,14 +1506,16 @@
     "name": "McDonald's Corporation",
     "sector": "非必需消費",
     "current_price": 281.44,
-    "fair_value": 269.8,
-    "upside_percent": -4.14,
+    "fair_value": 257.65,
+    "upside_percent": -8.45,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 281.44,
       "pb_multiples": null,
       "dcf_5yr": 239.18,
+      "ddm_model": 159.03,
+      "ev_sales": 195.81,
       "analyst_target": 299.0
     }
   },
@@ -1365,14 +1525,16 @@
     "name": "Cisco Systems, Inc.",
     "sector": "科技半導體",
     "current_price": 98.65,
-    "fair_value": 119.0,
-    "upside_percent": 20.63,
+    "fair_value": 113.21,
+    "upside_percent": 14.76,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 98.65,
       "pb_multiples": 98.65,
       "dcf_5yr": 121.83,
+      "ddm_model": 34.61,
+      "ev_sales": 80.09,
       "analyst_target": 135.56
     }
   },
@@ -1382,14 +1544,16 @@
     "name": "Abbott Laboratories",
     "sector": "醫療保健",
     "current_price": 110.51,
-    "fair_value": 107.93,
-    "upside_percent": -2.33,
+    "fair_value": 102.51,
+    "upside_percent": -7.24,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 110.51,
       "pb_multiples": 110.51,
       "dcf_5yr": 98.05,
+      "ddm_model": 51.91,
+      "ev_sales": 125.43,
       "analyst_target": 118.52269
     }
   },
@@ -1399,14 +1563,16 @@
     "name": "Linde plc",
     "sector": "綜合產業",
     "current_price": 520.33,
-    "fair_value": 541.79,
-    "upside_percent": 4.12,
+    "fair_value": 496.81,
+    "upside_percent": -4.52,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 520.33,
       "pb_multiples": 520.33,
       "dcf_5yr": 550.96,
+      "ddm_model": 131.84,
+      "ev_sales": 391.13,
       "analyst_target": 551.03705
     }
   },
@@ -1416,14 +1582,16 @@
     "name": "Walmart Inc.",
     "sector": "必需消費",
     "current_price": 125.66,
-    "fair_value": 105.76,
-    "upside_percent": -15.84,
+    "fair_value": 100.15,
+    "upside_percent": -20.3,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 125.66,
       "pb_multiples": 125.66,
       "dcf_5yr": 74.17,
+      "ddm_model": 20.39,
+      "ev_sales": 133.83,
       "analyst_target": 127.975
     }
   },
@@ -1433,14 +1601,16 @@
     "name": "Danaher Corporation",
     "sector": "醫療保健",
     "current_price": 235.12,
-    "fair_value": 236.9,
-    "upside_percent": 0.76,
+    "fair_value": 215.62,
+    "upside_percent": -8.29,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 235.12,
       "pb_multiples": 235.12,
       "dcf_5yr": 220.97,
+      "ddm_model": 32.96,
+      "ev_sales": 181.34,
       "analyst_target": 259.90475
     }
   },
@@ -1450,14 +1620,16 @@
     "name": "Walt Disney Company (The)",
     "sector": "通訊服務",
     "current_price": 119.12,
-    "fair_value": 144.76,
-    "upside_percent": 21.52,
+    "fair_value": 129.33,
+    "upside_percent": 8.57,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 119.12,
       "pb_multiples": 119.12,
       "dcf_5yr": 177.43,
+      "ddm_model": 30.9,
+      "ev_sales": 140.67,
       "analyst_target": 126.83281
     }
   },
@@ -1467,14 +1639,16 @@
     "name": "Verizon Communications Inc.",
     "sector": "通訊服務",
     "current_price": 46.06,
-    "fair_value": 86.38,
-    "upside_percent": 87.54,
+    "fair_value": 77.41,
+    "upside_percent": 68.06,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 46.06,
       "pb_multiples": 46.06,
       "dcf_5yr": 143.41,
+      "ddm_model": 58.3,
+      "ev_sales": 91.03,
       "analyst_target": 50.65
     }
   },
@@ -1484,14 +1658,16 @@
     "name": "Intel Corporation",
     "sector": "科技半導體",
     "current_price": 59.37,
-    "fair_value": 27.93,
-    "upside_percent": -52.96,
-    "confidence": "低",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "fair_value": 35.12,
+    "upside_percent": -40.85,
+    "confidence": "中",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": -35.25,
       "pb_multiples": 59.37,
       "dcf_5yr": null,
+      "ddm_model": null,
+      "ev_sales": 59.07,
       "analyst_target": 91.11628
     }
   },
@@ -1501,14 +1677,16 @@
     "name": "QUALCOMM Incorporated",
     "sector": "科技半導體",
     "current_price": 171.47,
-    "fair_value": 202.58,
-    "upside_percent": 18.14,
+    "fair_value": 198.91,
+    "upside_percent": 16.0,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 171.47,
       "pb_multiples": 171.47,
       "dcf_5yr": 238.5,
+      "ddm_model": 75.81,
+      "ev_sales": 174.14,
       "analyst_target": 185.7857
     }
   },
@@ -1518,14 +1696,16 @@
     "name": "Texas Instruments Incorporated",
     "sector": "科技半導體",
     "current_price": 295.73,
-    "fair_value": 302.61,
-    "upside_percent": 2.33,
+    "fair_value": 273.96,
+    "upside_percent": -7.36,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 295.73,
       "pb_multiples": 295.73,
       "dcf_5yr": 282.07,
+      "ddm_model": 125.25,
+      "ev_sales": 113.94,
       "analyst_target": 336.86206
     }
   },
@@ -1535,14 +1715,16 @@
     "name": "Amgen Inc.",
     "sector": "醫療保健",
     "current_price": 465.23,
-    "fair_value": 520.92,
-    "upside_percent": 11.97,
+    "fair_value": 482.13,
+    "upside_percent": 3.63,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 465.23,
       "pb_multiples": 465.23,
       "dcf_5yr": 631.08,
+      "ddm_model": 207.65,
+      "ev_sales": 360.54,
       "analyst_target": 429.7369
     }
   },
@@ -1552,14 +1734,16 @@
     "name": "International Business Machines",
     "sector": "科技半導體",
     "current_price": 246.11,
-    "fair_value": 259.22,
-    "upside_percent": 5.33,
+    "fair_value": 266.49,
+    "upside_percent": 8.28,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 246.11,
       "pb_multiples": 246.11,
       "dcf_5yr": 268.99,
+      "ddm_model": 139.26,
+      "ev_sales": 306.62,
       "analyst_target": 259.30347
     }
   },
@@ -1569,14 +1753,16 @@
     "name": "ServiceNow, Inc.",
     "sector": "科技半導體",
     "current_price": 102.76,
-    "fair_value": 97.91,
-    "upside_percent": -4.72,
+    "fair_value": 93.62,
+    "upside_percent": -8.89,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 102.76,
       "pb_multiples": 102.76,
       "dcf_5yr": 50.85,
+      "ddm_model": null,
+      "ev_sales": 74.53,
       "analyst_target": 155.8187
     }
   },
@@ -1586,14 +1772,16 @@
     "name": "Pfizer, Inc.",
     "sector": "醫療保健",
     "current_price": 29.23,
-    "fair_value": 28.09,
-    "upside_percent": -3.9,
+    "fair_value": 28.97,
+    "upside_percent": -0.89,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 29.23,
       "pb_multiples": 29.23,
       "dcf_5yr": 25.61,
+      "ddm_model": 35.43,
+      "ev_sales": 38.1,
       "analyst_target": 30.25962
     }
   },
@@ -1603,14 +1791,16 @@
     "name": "Intuit Inc.",
     "sector": "科技半導體",
     "current_price": 338.23,
-    "fair_value": 464.67,
-    "upside_percent": 37.38,
+    "fair_value": 447.52,
+    "upside_percent": 32.31,
     "confidence": "高",
-    "models_used": "DCF + 本益比/淨值比 + 分析師共識",
+    "models_used": "DCF + DDM + 倍數法(PE/PB/EV) + 分析師",
     "models": {
       "pe_multiples": 338.23,
       "pb_multiples": 338.23,
       "dcf_5yr": 602.18,
+      "ddm_model": 113.71,
+      "ev_sales": 335.09,
       "analyst_target": 407.75934
     }
   }
