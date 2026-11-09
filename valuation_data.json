@@ -4,14 +4,14 @@
     "name": "TAIWAN SEMICONDUCTOR MANUFACTUR",
     "sector": "科技半導體",
     "current_price": 2235.0,
-    "fair_value": 2678.63,
-    "upside_percent": 19.85,
+    "fair_value": 2734.24,
+    "upside_percent": 22.34,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
       "pe_multiples": 2235.0,
       "pb_multiples": 2235.0,
-      "dcf_5yr": 3565.89
+      "dcf_5yr": 3732.72
     }
   },
   {
@@ -199,14 +199,14 @@
     "name": "UNI-PRESIDENT ENTERPRISES CORP",
     "sector": "必需消費",
     "current_price": 76.7,
-    "fair_value": 82.72,
-    "upside_percent": 7.85,
+    "fair_value": 83.0,
+    "upside_percent": 8.21,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
       "pe_multiples": 76.7,
       "pb_multiples": 76.7,
-      "dcf_5yr": 94.77
+      "dcf_5yr": 95.59
     }
   },
   {
@@ -225,17 +225,542 @@
     }
   },
   {
-    "symbol": "AAPL",
-    "name": "Apple Inc.",
-    "sector": "科技半導體",
-    "current_price": 349.31,
-    "fair_value": 315.23,
-    "upside_percent": -9.76,
+    "symbol": "2884.TW",
+    "name": "E SUN FINANCIAL HOLDINGS",
+    "sector": "金融保險",
+    "current_price": 47.3,
+    "fair_value": 57.39,
+    "upside_percent": 21.33,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 349.31,
-      "pb_multiples": 349.31,
+      "pe_multiples": 47.3,
+      "pb_multiples": 47.3,
+      "dcf_5yr": 77.56
+    }
+  },
+  {
+    "symbol": "5871.TW",
+    "name": "CHAILEASE HOLDING COMPANY LIMIT",
+    "sector": "金融保險",
+    "current_price": 103.0,
+    "fair_value": 174.73,
+    "upside_percent": 69.64,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 103.0,
+      "pb_multiples": 103.0,
+      "dcf_5yr": 318.2
+    }
+  },
+  {
+    "symbol": "3034.TW",
+    "name": "NOVATEK MICROELECTRONICS",
+    "sector": "科技半導體",
+    "current_price": 486.5,
+    "fair_value": 617.48,
+    "upside_percent": 26.92,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 486.5,
+      "pb_multiples": 486.5,
+      "dcf_5yr": 879.45
+    }
+  },
+  {
+    "symbol": "2357.TW",
+    "name": "ASUSTEK COMPUTER INC",
+    "sector": "科技半導體",
+    "current_price": 860.0,
+    "fair_value": 1076.47,
+    "upside_percent": 25.17,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 860.0,
+      "pb_multiples": 860.0,
+      "dcf_5yr": 1509.41
+    }
+  },
+  {
+    "symbol": "2382.TW",
+    "name": "QUANTA COMPUTER",
+    "sector": "科技半導體",
+    "current_price": 296.5,
+    "fair_value": 466.68,
+    "upside_percent": 57.4,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 296.5,
+      "pb_multiples": 296.5,
+      "dcf_5yr": 807.05
+    }
+  },
+  {
+    "symbol": "3231.TW",
+    "name": "WISTRON CORPORATION",
+    "sector": "科技半導體",
+    "current_price": 168.5,
+    "fair_value": 254.16,
+    "upside_percent": 50.84,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 168.5,
+      "pb_multiples": 168.5,
+      "dcf_5yr": 425.48
+    }
+  },
+  {
+    "symbol": "2211.TW",
+    "name": "EVERGREEN STEEL CORP",
+    "sector": "工業製造",
+    "current_price": 75.2,
+    "fair_value": 96.27,
+    "upside_percent": 28.02,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 75.2,
+      "pb_multiples": 75.2,
+      "dcf_5yr": 138.4
+    }
+  },
+  {
+    "symbol": "1101.TW",
+    "name": "TCC GROUP HOLDINGS CO LTD",
+    "sector": "綜合產業",
+    "current_price": 26.8,
+    "fair_value": 3.65,
+    "upside_percent": -86.38,
+    "confidence": "低",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": -19.5,
+      "pb_multiples": 26.8,
+      "dcf_5yr": null
+    }
+  },
+  {
+    "symbol": "1227.TW",
+    "name": "STANDARD FOODS CORPORATION",
+    "sector": "必需消費",
+    "current_price": 26.2,
+    "fair_value": 36.98,
+    "upside_percent": 41.15,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 26.2,
+      "pb_multiples": 26.2,
+      "dcf_5yr": 58.54
+    }
+  },
+  {
+    "symbol": "1402.TW",
+    "name": "FAR EASTERN NEW CENTURY CORPORA",
+    "sector": "非必需消費",
+    "current_price": 27.25,
+    "fair_value": 27.65,
+    "upside_percent": 1.47,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 27.25,
+      "pb_multiples": 27.25,
+      "dcf_5yr": 28.44
+    }
+  },
+  {
+    "symbol": "2603.TW",
+    "name": "EVERGREEN MARINE CORP(TAIWAN)",
+    "sector": "工業製造",
+    "current_price": 245.5,
+    "fair_value": 427.59,
+    "upside_percent": 74.17,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 245.5,
+      "pb_multiples": 245.5,
+      "dcf_5yr": 791.77
+    }
+  },
+  {
+    "symbol": "2609.TW",
+    "name": "YANG MING MARINE TRANSPORT CORP",
+    "sector": "工業製造",
+    "current_price": 57.5,
+    "fair_value": 66.13,
+    "upside_percent": 15.01,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 57.5,
+      "pb_multiples": 57.5,
+      "dcf_5yr": 83.38
+    }
+  },
+  {
+    "symbol": "2615.TW",
+    "name": "WAN HAI LINES",
+    "sector": "工業製造",
+    "current_price": 107.0,
+    "fair_value": 162.41,
+    "upside_percent": 51.79,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 107.0,
+      "pb_multiples": 107.0,
+      "dcf_5yr": 273.24
+    }
+  },
+  {
+    "symbol": "2880.TW",
+    "name": "HUA NAN FINANCIAL HOLDINGS CO",
+    "sector": "金融保險",
+    "current_price": 49.6,
+    "fair_value": 55.99,
+    "upside_percent": 12.88,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 49.6,
+      "pb_multiples": 49.6,
+      "dcf_5yr": 68.78
+    }
+  },
+  {
+    "symbol": "2883.TW",
+    "name": "KGI FINANCIAL HOLDING CO LTD",
+    "sector": "金融保險",
+    "current_price": 34.55,
+    "fair_value": 44.25,
+    "upside_percent": 28.08,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 34.55,
+      "pb_multiples": 34.55,
+      "dcf_5yr": 63.66
+    }
+  },
+  {
+    "symbol": "2885.TW",
+    "name": "YUANTA FINANCIAL HOLDING CO. LT",
+    "sector": "金融保險",
+    "current_price": 69.4,
+    "fair_value": 78.34,
+    "upside_percent": 12.88,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 69.4,
+      "pb_multiples": 69.4,
+      "dcf_5yr": 96.22
+    }
+  },
+  {
+    "symbol": "2887.TW",
+    "name": "TS FINANCIAL HOLDING CO LTD",
+    "sector": "金融保險",
+    "current_price": 39.95,
+    "fair_value": 49.68,
+    "upside_percent": 24.36,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 39.95,
+      "pb_multiples": 39.95,
+      "dcf_5yr": 69.14
+    }
+  },
+  {
+    "symbol": "2892.TW",
+    "name": "FIRST FINANCIAL HOLDING CO LTD",
+    "sector": "金融保險",
+    "current_price": 40.95,
+    "fair_value": 50.1,
+    "upside_percent": 22.34,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 40.95,
+      "pb_multiples": 40.95,
+      "dcf_5yr": 68.41
+    }
+  },
+  {
+    "symbol": "3045.TW",
+    "name": "TAIWAN MOBILE CO",
+    "sector": "非必需消費",
+    "current_price": 131.0,
+    "fair_value": 119.69,
+    "upside_percent": -8.63,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 131.0,
+      "pb_multiples": 131.0,
+      "dcf_5yr": 97.07
+    }
+  },
+  {
+    "symbol": "3702.TW",
+    "name": "WPG HOLDINGS LIMITED",
+    "sector": "科技半導體",
+    "current_price": 90.4,
+    "fair_value": 201.73,
+    "upside_percent": 123.15,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 90.4,
+      "pb_multiples": 90.4,
+      "dcf_5yr": 424.38
+    }
+  },
+  {
+    "symbol": "4904.TW",
+    "name": "FAR EASTONE TELECOMMUNICATIONS",
+    "sector": "通訊服務",
+    "current_price": 106.0,
+    "fair_value": 100.47,
+    "upside_percent": -5.22,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 106.0,
+      "pb_multiples": 106.0,
+      "dcf_5yr": 89.41
+    }
+  },
+  {
+    "symbol": "5876.TW",
+    "name": "THE SHANGHAI COMM & SAVINGS BAN",
+    "sector": "金融保險",
+    "current_price": 51.4,
+    "fair_value": 72.31,
+    "upside_percent": 40.68,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 51.4,
+      "pb_multiples": 51.4,
+      "dcf_5yr": 114.14
+    }
+  },
+  {
+    "symbol": "6505.TW",
+    "name": "FORMOSA PETROCHEMICAL CORPORATI",
+    "sector": "能源原物料",
+    "current_price": 88.4,
+    "fair_value": 87.45,
+    "upside_percent": -1.07,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 88.4,
+      "pb_multiples": 88.4,
+      "dcf_5yr": 85.56
+    }
+  },
+  {
+    "symbol": "9910.TW",
+    "name": "FENG TAY ENTERPRISE CO LTD",
+    "sector": "非必需消費",
+    "current_price": 68.1,
+    "fair_value": 76.07,
+    "upside_percent": 11.7,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 68.1,
+      "pb_multiples": 68.1,
+      "dcf_5yr": 92.02
+    }
+  },
+  {
+    "symbol": "2345.TW",
+    "name": "ACCTON TECHNOLOGY CORP",
+    "sector": "科技半導體",
+    "current_price": 1405.0,
+    "fair_value": 1708.72,
+    "upside_percent": 21.62,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 1405.0,
+      "pb_multiples": 1405.0,
+      "dcf_5yr": 2316.17
+    }
+  },
+  {
+    "symbol": "2379.TW",
+    "name": "REALTEK SEMICONDUCTOR CORP",
+    "sector": "科技半導體",
+    "current_price": 743.0,
+    "fair_value": 842.76,
+    "upside_percent": 13.43,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 743.0,
+      "pb_multiples": 743.0,
+      "dcf_5yr": 1042.29
+    }
+  },
+  {
+    "symbol": "3008.TW",
+    "name": "LARGAN PRECISION CO",
+    "sector": "科技半導體",
+    "current_price": 4925.0,
+    "fair_value": 4163.1,
+    "upside_percent": -15.47,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 4925.0,
+      "pb_multiples": 4925.0,
+      "dcf_5yr": 2639.29
+    }
+  },
+  {
+    "symbol": "5347.TW",
+    "name": "5347.TW",
+    "sector": "綜合產業",
+    "current_price": 0,
+    "fair_value": 0,
+    "upside_percent": 0,
+    "confidence": "低",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": null
+    }
+  },
+  {
+    "symbol": "6669.TW",
+    "name": "WIWYNN CORPORATION",
+    "sector": "科技半導體",
+    "current_price": 1645.0,
+    "fair_value": 2292.74,
+    "upside_percent": 39.38,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 1645.0,
+      "pb_multiples": 1645.0,
+      "dcf_5yr": 3588.21
+    }
+  },
+  {
+    "symbol": "8046.TW",
+    "name": "NAN YA PRINTED CIRCUIT BOARD CO",
+    "sector": "科技半導體",
+    "current_price": 933.0,
+    "fair_value": 725.78,
+    "upside_percent": -22.21,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 933.0,
+      "pb_multiples": 933.0,
+      "dcf_5yr": 311.33
+    }
+  },
+  {
+    "symbol": "2408.TW",
+    "name": "NANYA TECHNOLOGY CORPORATION",
+    "sector": "科技半導體",
+    "current_price": 370.0,
+    "fair_value": 570.2,
+    "upside_percent": 54.11,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 370.0,
+      "pb_multiples": 370.0,
+      "dcf_5yr": 970.59
+    }
+  },
+  {
+    "symbol": "3037.TW",
+    "name": "UNIMICRON TECHNOLOGY",
+    "sector": "科技半導體",
+    "current_price": 757.0,
+    "fair_value": 748.44,
+    "upside_percent": -1.13,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 757.0,
+      "pb_multiples": 757.0,
+      "dcf_5yr": 731.32
+    }
+  },
+  {
+    "symbol": "3661.TW",
+    "name": "ALCHIP TECHNOLOGIES LIMITD",
+    "sector": "科技半導體",
+    "current_price": 3110.0,
+    "fair_value": 2913.19,
+    "upside_percent": -6.33,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 3110.0,
+      "pb_multiples": 3110.0,
+      "dcf_5yr": 2519.58
+    }
+  },
+  {
+    "symbol": "5871.TW",
+    "name": "CHAILEASE HOLDING COMPANY LIMIT",
+    "sector": "金融保險",
+    "current_price": 103.0,
+    "fair_value": 174.73,
+    "upside_percent": 69.64,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 103.0,
+      "pb_multiples": 103.0,
+      "dcf_5yr": 318.2
+    }
+  },
+  {
+    "symbol": "6415.TW",
+    "name": "SILERGY CORP",
+    "sector": "科技半導體",
+    "current_price": 427.5,
+    "fair_value": 403.29,
+    "upside_percent": -5.66,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 427.5,
+      "pb_multiples": 427.5,
+      "dcf_5yr": 354.87
+    }
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "科技半導體",
+    "current_price": 350.69,
+    "fair_value": 316.15,
+    "upside_percent": -9.85,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 350.69,
+      "pb_multiples": 350.69,
       "dcf_5yr": 247.07
     }
   },
@@ -243,14 +768,14 @@
     "symbol": "MSFT",
     "name": "Microsoft Corporation",
     "sector": "科技半導體",
-    "current_price": 544.165,
-    "fair_value": 596.43,
-    "upside_percent": 9.6,
+    "current_price": 545.18,
+    "fair_value": 597.11,
+    "upside_percent": 9.53,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 544.16,
-      "pb_multiples": 544.17,
+      "pe_multiples": 545.18,
+      "pb_multiples": 545.18,
       "dcf_5yr": 700.96
     }
   },
@@ -258,14 +783,14 @@
     "symbol": "NVDA",
     "name": "NVIDIA Corporation",
     "sector": "科技半導體",
-    "current_price": 177.245,
-    "fair_value": 214.62,
-    "upside_percent": 21.09,
+    "current_price": 178.67,
+    "fair_value": 215.57,
+    "upside_percent": 20.65,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 177.24,
-      "pb_multiples": 177.24,
+      "pe_multiples": 178.67,
+      "pb_multiples": 178.67,
       "dcf_5yr": 289.38
     }
   },
@@ -273,14 +798,14 @@
     "symbol": "AMZN",
     "name": "Amazon.com, Inc.",
     "sector": "非必需消費",
-    "current_price": 268.465,
-    "fair_value": 256.41,
-    "upside_percent": -4.49,
+    "current_price": 266.93,
+    "fair_value": 255.39,
+    "upside_percent": -4.32,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 268.46,
-      "pb_multiples": 268.46,
+      "pe_multiples": 266.93,
+      "pb_multiples": 266.93,
       "dcf_5yr": 232.3
     }
   },
@@ -288,14 +813,14 @@
     "symbol": "GOOGL",
     "name": "Alphabet Inc.",
     "sector": "通訊服務",
-    "current_price": 291.018,
-    "fair_value": 313.89,
-    "upside_percent": 7.86,
+    "current_price": 288.15,
+    "fair_value": 311.97,
+    "upside_percent": 8.27,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 291.02,
-      "pb_multiples": 291.02,
+      "pe_multiples": 288.15,
+      "pb_multiples": 288.15,
       "dcf_5yr": 359.62
     }
   },
@@ -303,14 +828,14 @@
     "symbol": "META",
     "name": "Meta Platforms, Inc.",
     "sector": "通訊服務",
-    "current_price": 641.99,
-    "fair_value": 740.47,
-    "upside_percent": 15.34,
+    "current_price": 641.37,
+    "fair_value": 740.06,
+    "upside_percent": 15.39,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 641.99,
-      "pb_multiples": 641.99,
+      "pe_multiples": 641.37,
+      "pb_multiples": 641.37,
       "dcf_5yr": 937.44
     }
   },
@@ -318,14 +843,14 @@
     "symbol": "TSLA",
     "name": "Tesla, Inc.",
     "sector": "非必需消費",
-    "current_price": 377.4273,
-    "fair_value": 262.72,
-    "upside_percent": -30.39,
+    "current_price": 378.05,
+    "fair_value": 263.13,
+    "upside_percent": -30.4,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 377.43,
-      "pb_multiples": 377.43,
+      "pe_multiples": 378.05,
+      "pb_multiples": 378.05,
       "dcf_5yr": 33.29
     }
   },
@@ -333,14 +858,14 @@
     "symbol": "BRK-B",
     "name": "Berkshire Hathaway Inc. New",
     "sector": "金融保險",
-    "current_price": 570.23,
-    "fair_value": 629.04,
-    "upside_percent": 10.31,
+    "current_price": 575.25,
+    "fair_value": 632.39,
+    "upside_percent": 9.93,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 570.23,
-      "pb_multiples": 570.23,
+      "pe_multiples": 575.25,
+      "pb_multiples": 575.25,
       "dcf_5yr": 746.66
     }
   },
@@ -348,14 +873,14 @@
     "symbol": "UNH",
     "name": "UnitedHealth Group Incorporated",
     "sector": "醫療保健",
-    "current_price": 398.29,
-    "fair_value": 479.18,
-    "upside_percent": 20.31,
+    "current_price": 397.62,
+    "fair_value": 478.73,
+    "upside_percent": 20.4,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 398.29,
-      "pb_multiples": 398.29,
+      "pe_multiples": 397.62,
+      "pb_multiples": 397.62,
       "dcf_5yr": 640.96
     }
   },
@@ -363,14 +888,14 @@
     "symbol": "JNJ",
     "name": "Johnson & Johnson",
     "sector": "醫療保健",
-    "current_price": 281.3,
-    "fair_value": 267.9,
-    "upside_percent": -4.76,
+    "current_price": 282.11,
+    "fair_value": 268.44,
+    "upside_percent": -4.85,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 281.3,
-      "pb_multiples": 281.3,
+      "pe_multiples": 282.11,
+      "pb_multiples": 282.11,
       "dcf_5yr": 241.09
     }
   },
@@ -378,14 +903,14 @@
     "symbol": "JPM",
     "name": "JP Morgan Chase & Co.",
     "sector": "金融保險",
-    "current_price": 342.83,
-    "fair_value": 373.32,
-    "upside_percent": 8.89,
+    "current_price": 342.08,
+    "fair_value": 372.82,
+    "upside_percent": 8.99,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 342.83,
-      "pb_multiples": 342.83,
+      "pe_multiples": 342.08,
+      "pb_multiples": 342.08,
       "dcf_5yr": 434.31
     }
   },
@@ -393,14 +918,14 @@
     "symbol": "V",
     "name": "Visa Inc.",
     "sector": "金融保險",
-    "current_price": 424.06,
-    "fair_value": 432.95,
-    "upside_percent": 2.1,
+    "current_price": 422.16,
+    "fair_value": 431.68,
+    "upside_percent": 2.26,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 424.06,
-      "pb_multiples": 424.06,
+      "pe_multiples": 422.16,
+      "pb_multiples": 422.16,
       "dcf_5yr": 450.72
     }
   },
@@ -408,14 +933,14 @@
     "symbol": "XOM",
     "name": "ExxonMobil Holdings Corporation",
     "sector": "能源原物料",
-    "current_price": 165.15,
-    "fair_value": 228.63,
-    "upside_percent": 38.44,
+    "current_price": 164.73,
+    "fair_value": 228.35,
+    "upside_percent": 38.62,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 165.15,
-      "pb_multiples": 165.15,
+      "pe_multiples": 164.73,
+      "pb_multiples": 164.73,
       "dcf_5yr": 355.6
     }
   },
@@ -423,14 +948,14 @@
     "symbol": "PG",
     "name": "Procter & Gamble Company (The)",
     "sector": "必需消費",
-    "current_price": 167.69,
-    "fair_value": 159.65,
-    "upside_percent": -4.79,
+    "current_price": 168.32,
+    "fair_value": 160.07,
+    "upside_percent": -4.9,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 167.69,
-      "pb_multiples": 167.69,
+      "pe_multiples": 168.32,
+      "pb_multiples": 168.32,
       "dcf_5yr": 143.58
     }
   },
@@ -438,135 +963,495 @@
     "symbol": "MA",
     "name": "Mastercard Incorporated",
     "sector": "金融保險",
-    "current_price": 658.7,
-    "fair_value": 641.23,
-    "upside_percent": -2.65,
+    "current_price": 655.81,
+    "fair_value": 639.3,
+    "upside_percent": -2.52,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 658.7,
-      "pb_multiples": 658.7,
+      "pe_multiples": 655.81,
+      "pb_multiples": 655.81,
       "dcf_5yr": 606.28
     }
   },
   {
-    "symbol": "AMD",
-    "name": "Advanced Micro Devices, Inc.",
-    "sector": "科技半導體",
-    "current_price": 503.13,
-    "fair_value": 392.41,
-    "upside_percent": -22.01,
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "sector": "必需消費",
+    "current_price": 1066.18,
+    "fair_value": 926.02,
+    "upside_percent": -13.15,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 503.0,
-      "pb_multiples": 503.0,
-      "dcf_5yr": 171.22
+      "pe_multiples": 1066.18,
+      "pb_multiples": 1066.18,
+      "dcf_5yr": 645.71
     }
   },
   {
-    "symbol": "INTC",
-    "name": "Intel Corporation",
-    "sector": "科技半導體",
-    "current_price": 58.34,
-    "fair_value": 11.55,
-    "upside_percent": -80.2,
-    "confidence": "低",
+    "symbol": "HD",
+    "name": "Home Depot, Inc. (The)",
+    "sector": "非必需消費",
+    "current_price": 353.42,
+    "fair_value": 339.3,
+    "upside_percent": -4.0,
+    "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": -35.25,
-      "pb_multiples": 58.34,
-      "dcf_5yr": null
+      "pe_multiples": 353.42,
+      "pb_multiples": 353.42,
+      "dcf_5yr": 311.07
+    }
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "sector": "科技半導體",
+    "current_price": 319.48,
+    "fair_value": 308.47,
+    "upside_percent": -3.45,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 319.48,
+      "pb_multiples": 319.48,
+      "dcf_5yr": 286.46
+    }
+  },
+  {
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "sector": "醫療保健",
+    "current_price": 1411.95,
+    "fair_value": 1317.02,
+    "upside_percent": -6.72,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 1411.95,
+      "pb_multiples": 1411.95,
+      "dcf_5yr": 1127.17
     }
   },
   {
     "symbol": "NFLX",
     "name": "Netflix, Inc.",
     "sector": "通訊服務",
-    "current_price": 63.73,
-    "fair_value": 65.06,
-    "upside_percent": 2.09,
+    "current_price": 63.95,
+    "fair_value": 65.2,
+    "upside_percent": 1.95,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 63.73,
-      "pb_multiples": 63.73,
+      "pe_multiples": 63.95,
+      "pb_multiples": 63.95,
       "dcf_5yr": 67.71
     }
   },
   {
-    "symbol": "ADBE",
-    "name": "Adobe Inc.",
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
     "sector": "科技半導體",
-    "current_price": 239.475,
-    "fair_value": 378.06,
-    "upside_percent": 57.87,
+    "current_price": 508.58,
+    "fair_value": 396.13,
+    "upside_percent": -22.11,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 239.48,
-      "pb_multiples": 239.48,
-      "dcf_5yr": 655.23
+      "pe_multiples": 508.58,
+      "pb_multiples": 508.58,
+      "dcf_5yr": 171.22
+    }
+  },
+  {
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "sector": "醫療保健",
+    "current_price": 293.3,
+    "fair_value": 266.51,
+    "upside_percent": -9.13,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 293.3,
+      "pb_multiples": 293.3,
+      "dcf_5yr": 212.92
     }
   },
   {
     "symbol": "CRM",
     "name": "Salesforce, Inc.",
     "sector": "科技半導體",
-    "current_price": 216.485,
-    "fair_value": 277.62,
-    "upside_percent": 28.24,
+    "current_price": 214.94,
+    "fair_value": 276.58,
+    "upside_percent": 28.68,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 216.49,
-      "pb_multiples": 216.49,
+      "pe_multiples": 214.94,
+      "pb_multiples": 214.94,
       "dcf_5yr": 399.87
+    }
+  },
+  {
+    "symbol": "BAC",
+    "name": "Bank of America Corporation",
+    "sector": "金融保險",
+    "current_price": 50.55,
+    "fair_value": 82.25,
+    "upside_percent": 62.71,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 50.55,
+      "pb_multiples": 50.55,
+      "dcf_5yr": 145.66
+    }
+  },
+  {
+    "symbol": "CVX",
+    "name": "Chevron Corporation",
+    "sector": "能源原物料",
+    "current_price": 210.78,
+    "fair_value": 284.04,
+    "upside_percent": 34.76,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 210.78,
+      "pb_multiples": 210.78,
+      "dcf_5yr": 430.57
+    }
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Company, Inc.",
+    "sector": "醫療保健",
+    "current_price": 148.76,
+    "fair_value": 111.25,
+    "upside_percent": -25.22,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 148.76,
+      "pb_multiples": 148.76,
+      "dcf_5yr": 36.22
+    }
+  },
+  {
+    "symbol": "pe",
+    "name": "pe",
+    "sector": "綜合產業",
+    "current_price": 0,
+    "fair_value": 0,
+    "upside_percent": 0,
+    "confidence": "低",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": null
+    }
+  },
+  {
+    "symbol": "PEP",
+    "name": "Pepsico, Inc.",
+    "sector": "必需消費",
+    "current_price": 141.88,
+    "fair_value": 145.74,
+    "upside_percent": 2.72,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 141.88,
+      "pb_multiples": 141.88,
+      "dcf_5yr": 153.45
+    }
+  },
+  {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "sector": "科技半導體",
+    "current_price": 237.32,
+    "fair_value": 376.62,
+    "upside_percent": 58.7,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 237.32,
+      "pb_multiples": 237.32,
+      "dcf_5yr": 655.23
+    }
+  },
+  {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific Inc",
+    "sector": "醫療保健",
+    "current_price": 721.63,
+    "fair_value": 712.3,
+    "upside_percent": -1.29,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 721.63,
+      "pb_multiples": 721.63,
+      "dcf_5yr": 693.64
+    }
+  },
+  {
+    "symbol": "ACN",
+    "name": "Accenture plc",
+    "sector": "科技半導體",
+    "current_price": 254.37,
+    "fair_value": 292.32,
+    "upside_percent": 14.92,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 254.37,
+      "pb_multiples": 254.37,
+      "dcf_5yr": 368.21
+    }
+  },
+  {
+    "symbol": "MCD",
+    "name": "McDonald's Corporation",
+    "sector": "非必需消費",
+    "current_price": 281.44,
+    "fair_value": 267.35,
+    "upside_percent": -5.01,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 281.44,
+      "pb_multiples": 281.44,
+      "dcf_5yr": 239.18
+    }
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "sector": "科技半導體",
+    "current_price": 98.65,
+    "fair_value": 106.38,
+    "upside_percent": 7.84,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 98.65,
+      "pb_multiples": 98.65,
+      "dcf_5yr": 121.83
+    }
+  },
+  {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "sector": "醫療保健",
+    "current_price": 110.51,
+    "fair_value": 106.36,
+    "upside_percent": -3.76,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 110.51,
+      "pb_multiples": 110.51,
+      "dcf_5yr": 98.05
+    }
+  },
+  {
+    "symbol": "LIN",
+    "name": "Linde plc",
+    "sector": "綜合產業",
+    "current_price": 520.33,
+    "fair_value": 530.54,
+    "upside_percent": 1.96,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 520.33,
+      "pb_multiples": 520.33,
+      "dcf_5yr": 550.96
+    }
+  },
+  {
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "sector": "必需消費",
+    "current_price": 125.66,
+    "fair_value": 108.5,
+    "upside_percent": -13.66,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 125.66,
+      "pb_multiples": 125.66,
+      "dcf_5yr": 74.17
+    }
+  },
+  {
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "sector": "醫療保健",
+    "current_price": 235.12,
+    "fair_value": 230.4,
+    "upside_percent": -2.01,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 235.12,
+      "pb_multiples": 235.12,
+      "dcf_5yr": 220.97
+    }
+  },
+  {
+    "symbol": "DIS",
+    "name": "Walt Disney Company (The)",
+    "sector": "通訊服務",
+    "current_price": 119.12,
+    "fair_value": 138.56,
+    "upside_percent": 16.32,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 119.12,
+      "pb_multiples": 119.12,
+      "dcf_5yr": 177.43
+    }
+  },
+  {
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc.",
+    "sector": "通訊服務",
+    "current_price": 46.06,
+    "fair_value": 78.51,
+    "upside_percent": 70.45,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 46.06,
+      "pb_multiples": 46.06,
+      "dcf_5yr": 143.41
+    }
+  },
+  {
+    "symbol": "INTC",
+    "name": "Intel Corporation",
+    "sector": "科技半導體",
+    "current_price": 59.37,
+    "fair_value": 12.06,
+    "upside_percent": -79.69,
+    "confidence": "低",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": -35.25,
+      "pb_multiples": 59.37,
+      "dcf_5yr": null
     }
   },
   {
     "symbol": "QCOM",
     "name": "QUALCOMM Incorporated",
     "sector": "科技半導體",
-    "current_price": 175.2,
-    "fair_value": 196.3,
-    "upside_percent": 12.04,
+    "current_price": 171.47,
+    "fair_value": 193.81,
+    "upside_percent": 13.03,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 175.2,
-      "pb_multiples": 175.2,
+      "pe_multiples": 171.47,
+      "pb_multiples": 171.47,
       "dcf_5yr": 238.5
+    }
+  },
+  {
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "sector": "科技半導體",
+    "current_price": 295.73,
+    "fair_value": 291.18,
+    "upside_percent": -1.54,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 295.73,
+      "pb_multiples": 295.73,
+      "dcf_5yr": 282.07
+    }
+  },
+  {
+    "symbol": "AMGN",
+    "name": "Amgen Inc.",
+    "sector": "醫療保健",
+    "current_price": 465.23,
+    "fair_value": 520.51,
+    "upside_percent": 11.88,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 465.23,
+      "pb_multiples": 465.23,
+      "dcf_5yr": 631.08
     }
   },
   {
     "symbol": "IBM",
     "name": "International Business Machines",
     "sector": "科技半導體",
-    "current_price": 247.385,
-    "fair_value": 254.59,
-    "upside_percent": 2.91,
+    "current_price": 246.11,
+    "fair_value": 253.74,
+    "upside_percent": 3.1,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 247.38,
-      "pb_multiples": 247.39,
+      "pe_multiples": 246.11,
+      "pb_multiples": 246.11,
       "dcf_5yr": 268.99
     }
   },
   {
-    "symbol": "ORCL",
-    "name": "Oracle Corporation",
+    "symbol": "NOW",
+    "name": "ServiceNow, Inc.",
     "sector": "科技半導體",
-    "current_price": 119.08,
-    "fair_value": 157.19,
-    "upside_percent": 32.0,
+    "current_price": 102.76,
+    "fair_value": 85.46,
+    "upside_percent": -16.84,
     "confidence": "高",
     "models_used": "DCF模型 + 本益比/淨值比倍數",
     "models": {
-      "pe_multiples": 119.08,
-      "pb_multiples": 119.08,
-      "dcf_5yr": 233.41
+      "pe_multiples": 102.76,
+      "pb_multiples": 102.76,
+      "dcf_5yr": 50.85
+    }
+  },
+  {
+    "symbol": "PFE",
+    "name": "Pfizer, Inc.",
+    "sector": "醫療保健",
+    "current_price": 29.23,
+    "fair_value": 28.02,
+    "upside_percent": -4.14,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 29.23,
+      "pb_multiples": 29.23,
+      "dcf_5yr": 25.61
+    }
+  },
+  {
+    "symbol": "INTU",
+    "name": "Intuit Inc.",
+    "sector": "科技半導體",
+    "current_price": 338.23,
+    "fair_value": 426.21,
+    "upside_percent": 26.01,
+    "confidence": "高",
+    "models_used": "DCF模型 + 本益比/淨值比倍數",
+    "models": {
+      "pe_multiples": 338.23,
+      "pb_multiples": 338.23,
+      "dcf_5yr": 602.18
     }
   }
 ]
