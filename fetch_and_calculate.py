@@ -2,7 +2,6 @@ import yfinance as yf
 import json
 import os
 
-# 台股常用中文名稱對照表 (針對台50成分股)
 TW_NAME_MAP = {
     "2330.TW": "台積電", "2317.TW": "鴻海", "2454.TW": "聯發科", "2308.TW": "台達電", "2881.TW": "富邦金",
     "2882.TW": "國泰金", "2412.TW": "中華電", "2891.TW": "中信金", "3711.TW": "日月光投控", "1301.TW": "台塑",
@@ -50,6 +49,9 @@ def analyze_stock(ticker_symbol):
     book_value = info.get('bookValue', 0)
     sector = info.get('sector', '一般產業')
     
+    # 抓取分析師未來一年平均目標價共識
+    analyst_target = info.get('targetMeanPrice')
+    
     sector_map = {
         "Technology": "科技半導體",
         "Financial Services": "金融保險",
@@ -64,7 +66,6 @@ def analyze_stock(ticker_symbol):
     }
     category_name = sector_map.get(sector, "綜合產業")
 
-    # 處理股票名稱：台股優先使用自訂中文名，去除 .TW
     if ticker_symbol in TW_NAME_MAP:
         clean_symbol = ticker_symbol.replace(".TW", "")
         stock_name = TW_NAME_MAP[ticker_symbol]
@@ -76,18 +77,50 @@ def analyze_stock(ticker_symbol):
     if eps > 0 and forward_eps > eps:
         growth_rate = min((forward_eps - eps) / eps, 0.25)
     
-    pe_fair = round(eps * pe_ratio, 2) if eps else None
-    pb_fair = round(book_value * pb_ratio, 2) if book_value else None
+    # 各模型計算
+    pe_fair = round(eps * pe_ratio, 2) if eps and pe_ratio > 0 else None
+    pb_fair = round(book_value * pb_ratio, 2) if book_value and pb_ratio > 0 else None
     dcf_fair = calculate_dcf(eps, growth_rate) if eps > 0 else None
 
-    valid_models = [m for m in [pe_fair, pb_fair, dcf_fair] if m is not None]
-    fair_value = round(sum(valid_models) / len(valid_models), 2) if valid_models else current_price
+    # === 智慧權重分配與綜合公允價計算 ===
+    weighted_sum = 0
+    total_weight = 0
+
+    # 針對不同產業給予不同的模型權重
+    if sector == "Financial Services":
+        # 金融股重看 P/B 與分析師目標價
+        weights = { "pb": 0.5, "pe": 0.3, "analyst": 0.2, "dcf": 0.0 }
+    else:
+        # 科技與一般成長股重看 DCF 與 P/E 以及分析師預估
+        weights = { "dcf": 0.4, "pe": 0.3, "analyst": 0.3, "pb": 0.0 }
+
+    if dcf_fair and weights["dcf"] > 0:
+        weighted_sum += dcf_fair * weights["dcf"]
+        total_weight += weights["dcf"]
+    if pe_fair and weights["pe"] > 0:
+        weighted_sum += pe_fair * weights["pe"]
+        total_weight += weights["pe"]
+    if pb_fair and weights["pb"] > 0:
+        weighted_sum += pb_fair * weights["pb"]
+        total_weight += weights["pb"]
+    if analyst_target and weights["analyst"] > 0:
+        weighted_sum += analyst_target * weights["analyst"]
+        total_weight += weights["analyst"]
+
+    # 如果有成功權重加權，取加權結果；否則退回簡單平均或現價
+    if total_weight > 0:
+        fair_value = round(weighted_sum / total_weight, 2)
+    else:
+        valid_models = [m for m in [pe_fair, pb_fair, dcf_fair, analyst_target] if m is not None]
+        fair_value = round(sum(valid_models) / len(valid_models), 2) if valid_models else current_price
+
     upside = round(((fair_value - current_price) / current_price) * 100, 2) if current_price else 0
 
+    # 信賴度評估 (納入分析師覆蓋與模型齊全度)
     confidence = "高"
-    if not forward_eps or not eps or eps <= 0:
+    if not analyst_target or not forward_eps or eps <= 0:
         confidence = "低"
-    elif len(valid_models) < 2:
+    elif total_weight < 0.7:
         confidence = "中"
 
     return {
@@ -99,11 +132,12 @@ def analyze_stock(ticker_symbol):
         "fair_value": fair_value,
         "upside_percent": upside,
         "confidence": confidence,
-        "models_used": "DCF + 倍數法",
+        "models_used": "DCF + 本益比/淨值比 + 分析師共識",
         "models": {
             "pe_multiples": pe_fair,
             "pb_multiples": pb_fair,
-            "dcf_5yr": dcf_fair
+            "dcf_5yr": dcf_fair,
+            "analyst_target": analyst_target
         }
     }
 
