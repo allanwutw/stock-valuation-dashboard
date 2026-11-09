@@ -2,25 +2,25 @@ import yfinance as yf
 import json
 import os
 
-# 台灣50成分股代表與美國市值前100大熱門股票清單
-TICKERS = [
-    # 台灣 50 成分股 (台股代號後方加 .TW)
-    "2330.TW", "2317.TW", "2454.TW", "2308.TW", "2881.TW", 
-    "2882.TW", "2412.TW", "2891.TW", "3711.TW", "1301.TW",
-    "2002.TW", "2886.TW", "5880.TW", "1216.TW", "2912.TW",
-    "2884.TW", "5871.TW", "3034.TW", "2357.TW", "2382.TW",
-    "3231.TW", "2211.TW", "1101.TW", "1227.TW", "1402.TW",
-    "2603.TW", "2609.TW", "2615.TW", "2880.TW", "2883.TW",
-    "2885.TW", "2887.TW", "2892.TW", "3045.TW", "3702.TW",
-    "4904.TW", "5876.TW", "6505.TW", "9910.TW", "2345.TW",
-    "2379.TW", "3008.TW", "5347.TW", "6669.TW", "8046.TW",
-    "2408.TW", "3037.TW", "3661.TW", "5871.TW", "6415.TW",
-    
-    # 美國市值前百大與熱門大市值股
+# 台股常用中文名稱對照表 (針對台50成分股)
+TW_NAME_MAP = {
+    "2330.TW": "台積電", "2317.TW": "鴻海", "2454.TW": "聯發科", "2308.TW": "台達電", "2881.TW": "富邦金",
+    "2882.TW": "國泰金", "2412.TW": "中華電", "2891.TW": "中信金", "3711.TW": "日月光投控", "1301.TW": "台塑",
+    "2002.TW": "中鋼", "2886.TW": "兆豐金", "5880.TW": "合庫金", "1216.TW": "統一", "2912.TW": "統一超",
+    "2884.TW": "玉山金", "5871.TW": "中租-KY", "3034.TW": "聯詠", "2357.TW": "華碩", "2382.TW": "廣達",
+    "3231.TW": "緯創", "2211.TW": "長榮鋼", "1101.TW": "台泥", "1227.TW": "佳格", "1402.TW": "遠東新",
+    "2603.TW": "長榮", "2609.TW": "陽明", "2615.TW": "萬海", "2880.TW": "華南金", "2883.TW": "開發金",
+    "2885.TW": "元大金", "2887.TW": "台新金", "2892.TW": "第一金", "3045.TW": "台灣大哥大", "3702.TW": "大聯大",
+    "4904.TW": "遠傳", "5876.TW": "上海商銀", "6505.TW": "台塑化", "9910.TW": "豐泰", "2345.TW": "智邦",
+    "2379.TW": "瑞昱", "3008.TW": "大立光", "5347.TW": "世界", "6669.TW": "緯穎", "8046.TW": "南電",
+    "2408.TW": "南亞科", "3037.TW": "欣興", "3661.TW": "世芯-KY", "6415.TW": "矽力-KY"
+}
+
+TICKERS = list(TW_NAME_MAP.keys()) + [
     "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", 
     "BRK-B", "UNH", "JNJ", "JPM", "V", "XOM", "PG", "MA",
     "COST", "HD", "AVGO", "LLY", "NFLX", "AMD", "ABBV", "CRM",
-    "BAC", "CVX", "MRK", "pe", "PEP", "ADBE", "TMO", "ACN",
+    "BAC", "CVX", "MRK", "PEP", "ADBE", "TMO", "ACN",
     "MCD", "CSCO", "ABT", "LIN", "WMT", "DHR", "DIS", "VZ",
     "INTC", "QCOM", "TXN", "AMGN", "IBM", "NOW", "PFE", "INTU"
 ]
@@ -64,6 +64,14 @@ def analyze_stock(ticker_symbol):
     }
     category_name = sector_map.get(sector, "綜合產業")
 
+    # 處理股票名稱：台股優先使用自訂中文名，去除 .TW
+    if ticker_symbol in TW_NAME_MAP:
+        clean_symbol = ticker_symbol.replace(".TW", "")
+        stock_name = TW_NAME_MAP[ticker_symbol]
+    else:
+        clean_symbol = ticker_symbol
+        stock_name = info.get('shortName', ticker_symbol) or ticker_symbol
+
     growth_rate = 0.08
     if eps > 0 and forward_eps > eps:
         growth_rate = min((forward_eps - eps) / eps, 0.25)
@@ -83,14 +91,15 @@ def analyze_stock(ticker_symbol):
         confidence = "中"
 
     return {
-        "symbol": ticker_symbol,
-        "name": info.get('shortName', ticker_symbol) or ticker_symbol,
+        "symbol": clean_symbol,
+        "raw_ticker": ticker_symbol,
+        "name": stock_name,
         "sector": category_name,
         "current_price": current_price,
         "fair_value": fair_value,
         "upside_percent": upside,
         "confidence": confidence,
-        "models_used": "DCF模型 + 本益比/淨值比倍數",
+        "models_used": "DCF + 倍數法",
         "models": {
             "pe_multiples": pe_fair,
             "pb_multiples": pb_fair,
@@ -100,7 +109,11 @@ def analyze_stock(ticker_symbol):
 
 def main():
     results = []
+    seen = set()
     for t in TICKERS:
+        if t in seen:
+            continue
+        seen.add(t)
         try:
             data = analyze_stock(t)
             results.append(data)
