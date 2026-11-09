@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "2330.TW",
+    "name": "TAIWAN SEMICONDUCTOR MANUFACTUR",
+    "current_price": 2235.0,
+    "fair_value": 2678.63,
+    "upside_percent": 19.85,
+    "models": {
+      "pe_multiples": 2235.0,
+      "pb_multiples": 2235.0,
+      "dcf_5yr": 3565.89
+    }
+  },
+  {
+    "symbol": "2382.TW",
+    "name": "QUANTA COMPUTER",
+    "current_price": 296.5,
+    "fair_value": 466.68,
+    "upside_percent": 57.4,
+    "models": {
+      "pe_multiples": 296.5,
+      "pb_multiples": 296.5,
+      "dcf_5yr": 807.05
+    }
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "current_price": 542.715,
+    "fair_value": 595.46,
+    "upside_percent": 9.72,
+    "models": {
+      "pe_multiples": 542.72,
+      "pb_multiples": 542.71,
+      "dcf_5yr": 700.96
+    }
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "current_price": 177.68,
+    "fair_value": 214.91,
+    "upside_percent": 20.95,
+    "models": {
+      "pe_multiples": 177.68,
+      "pb_multiples": 177.68,
+      "dcf_5yr": 289.38
+    }
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "current_price": 350.215,
+    "fair_value": 315.83,
+    "upside_percent": -9.82,
+    "models": {
+      "pe_multiples": 350.21,
+      "pb_multiples": 350.21,
+      "dcf_5yr": 247.07
+    }
+  }
+]
