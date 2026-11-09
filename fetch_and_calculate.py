@@ -2,7 +2,15 @@ import yfinance as yf
 import json
 import os
 
-TICKERS = ["2330.TW", "2382.TW", "MSFT", "NVDA", "AAPL"]
+# 台灣市值代表股與美國前兩百大熱門市值股票清單
+TICKERS = [
+    # 台灣重要權值股 (台股請加 .TW)
+    "2330.TW", "2317.TW", "2454.TW", "2308.TW", "2881.TW", 
+    "2882.TW", "2412.TW", "2891.TW", "3711.TW", "1301.TW",
+    # 美國標竿與前百大市值熱門股
+    "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", 
+    "BRK-B", "UNH", "JNJ", "JPM", "V", "XOM", "PG", "MA"
+]
 
 def calculate_dcf(fcf, growth_rate, wacc=0.09, years=5, terminal_growth=0.02):
     if not fcf or fcf <= 0:
@@ -42,7 +50,7 @@ def analyze_stock(ticker_symbol):
 
     return {
         "symbol": ticker_symbol,
-        "name": info.get('shortName', ticker_symbol),
+        "name": info.get('shortName', ticker_symbol) or ticker_symbol,
         "current_price": current_price,
         "fair_value": fair_value,
         "upside_percent": upside,
