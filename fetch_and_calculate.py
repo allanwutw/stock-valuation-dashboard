@@ -30,7 +30,7 @@ def calculate_dcf(fcf, growth_rate, wacc=0.09, years=5, terminal_growth=0.02):
     pv_sum = 0
     curr_fcf = fcf
     for t in range(1, years + 1):
-        curr_fcf *= (1 + min(growth_rate, 0.12)) # 嚴格限制成長率上限防禦
+        curr_fcf *= (1 + min(growth_rate, 0.12)) # 嚴格限制現金流成長率上限
         pv_sum += curr_fcf / ((1 + wacc) ** t)
     
     terminal_val = (curr_fcf * (1 + terminal_growth)) / (wacc - terminal_growth)
@@ -60,7 +60,12 @@ def analyze_stock(ticker_symbol):
     ev_to_sales = info.get('enterpriseToRevenue', 3.0)
     revenue_per_share = info.get('revenuePerShare', 0)
     sector = info.get('sector', '一般產業')
-    analyst_target = info.get('targetMeanPrice')
+    
+    # 取得原始分析師目標價，並進行極端值防禦（夾擠在現價 0.5 ~ 1.5 倍之間）
+    raw_analyst_target = info.get('targetMeanPrice')
+    analyst_target = None
+    if raw_analyst_target and raw_analyst_target > 0:
+        analyst_target = max(current_price * 0.5, min(raw_analyst_target, current_price * 1.5))
     
     sector_map = {
         "Technology": "科技半導體",
@@ -88,34 +93,29 @@ def analyze_stock(ticker_symbol):
         growth_rate = min((forward_eps - eps) / eps, 0.15)
     
     # 各模型計算與合理區間過濾
-    pe_fair = round(eps * min(pe_ratio, 30), 2) if eps and 0 < pe_ratio < 40 else None
-    pb_fair = round(book_value * min(pb_ratio, 4), 2) if book_value and 0 < pb_ratio < 6 else None
+    pe_fair = round(eps * min(pe_ratio, 25), 2) if eps and 0 < pe_ratio < 35 else None
+    pb_fair = round(book_value * min(pb_ratio, 3.5), 2) if book_value and 0 < pb_ratio < 5 else None
     dcf_fair = calculate_dcf(eps, growth_rate) if eps > 0 else None
     ddm_fair = calculate_ddm(dividend_rate) if dividend_rate and dividend_rate > 0 else None
-    ev_sales_fair = round(revenue_per_share * min(ev_to_sales, 4.0), 2) if revenue_per_share and revenue_per_share > 0 else None
+    ev_sales_fair = round(revenue_per_share * min(ev_to_sales, 3.5), 2) if revenue_per_share and revenue_per_share > 0 else None
 
     # === 精細化產業權重對應 ===
     if sector == "Financial Services":
-        # 金融保險：重看 DDM 與 淨值比 (P/B)
         weights = { "ddm": 0.5, "pb": 0.3, "analyst": 0.2, "pe": 0.0, "dcf": 0.0, "ev_sales": 0.0 }
     elif sector == "Utilities" or sector == "Communication Services":
-        # 公用事業與電信：重看 DDM 與 穩健現金流
         weights = { "ddm": 0.4, "dcf": 0.3, "analyst": 0.3, "pe": 0.0, "pb": 0.0, "ev_sales": 0.0 }
     elif sector == "Technology":
-        # 科技半導體：重看 DCF 與 本益比 (P/E)
         weights = { "dcf": 0.4, "pe": 0.3, "analyst": 0.3, "pb": 0.0, "ddm": 0.0, "ev_sales": 0.0 }
     elif sector == "Energy" or sector == "Industrials":
-        # 傳產與能源：重看 淨值比 (P/B) 與分析師共識
         weights = { "pb": 0.4, "analyst": 0.4, "pe": 0.2, "dcf": 0.0, "ddm": 0.0, "ev_sales": 0.0 }
     else:
-        # 一般消費與綜合產業
         weights = { "dcf": 0.35, "pe": 0.35, "analyst": 0.3, "pb": 0.0, "ddm": 0.0, "ev_sales": 0.0 }
 
     models_dict = {
-        "dcf": ("DCF", dcf_fair),
-        "pe": ("P/E", pe_fair),
-        "pb": ("P/B", pb_fair),
-        "ddm": ("DDM", ddm_fair),
+        "dcf": ("DCF模型", dcf_fair),
+        "pe": ("P/E本益比", pe_fair),
+        "pb": ("P/B淨值比", pb_fair),
+        "ddm": ("DDM股利", ddm_fair),
         "ev_sales": ("EV/Sales", ev_sales_fair),
         "analyst": ("分析師目標價", analyst_target)
     }
@@ -127,8 +127,8 @@ def analyze_stock(ticker_symbol):
     for key, weight in weights.items():
         name, val = models_dict[key]
         if val is not None and weight > 0:
-            # 偏差防禦：強制夾擠單一模型數值不得偏離現價超過 2.5 倍
-            val = max(current_price * 0.4, min(val, current_price * 2.5))
+            # 單一模型極端值夾擠（限制在現價 0.5 倍至 2.0 倍之間）
+            val = max(current_price * 0.5, min(val, current_price * 2.0))
             weighted_sum += val * weight
             total_weight += weight
             active_models_list.append(name)
@@ -139,8 +139,8 @@ def analyze_stock(ticker_symbol):
         valid_vals = [v[1] for v in models_dict.values() if v[1] is not None]
         fair_value = round(sum(valid_vals) / len(valid_vals), 2) if valid_vals else current_price
 
-    # 最終整體公允價防禦夾擠：限制在現價的 0.5 倍到 2.0 倍之間，徹底消滅不合理的誇張報酬率
-    fair_value = max(round(current_price * 0.5, 2), min(fair_value, round(current_price * 2.0, 2)))
+    # 最終整體公允價強效夾擠：限制在現價的 0.6 倍到 1.6 倍之間，確保潛在報酬率合理
+    fair_value = max(round(current_price * 0.6, 2), min(fair_value, round(current_price * 1.6, 2)))
     upside = round(((fair_value - current_price) / current_price) * 100, 2)
 
     confidence = "高"
