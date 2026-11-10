@@ -49,6 +49,9 @@ def analyze_stock(ticker_symbol):
     info = stock.info
     
     current_price = info.get('currentPrice') or info.get('regularMarketPrice', 0)
+    if not current_price or current_price <= 0:
+        raise ValueError("無效的當前股價")
+
     eps = info.get('trailingEps', 0)
     forward_eps = info.get('forwardEps', eps)
     pe_ratio = info.get('trailingPE', 15)
@@ -58,7 +61,6 @@ def analyze_stock(ticker_symbol):
     ev_to_sales = info.get('enterpriseToRevenue', 3.0)
     revenue_per_share = info.get('revenuePerShare', 0)
     sector = info.get('sector', '一般產業')
-    
     analyst_target = info.get('targetMeanPrice')
     
     sector_map = {
@@ -86,59 +88,65 @@ def analyze_stock(ticker_symbol):
     if eps > 0 and forward_eps > eps:
         growth_rate = min((forward_eps - eps) / eps, 0.25)
     
-    pe_fair = round(eps * pe_ratio, 2) if eps and pe_ratio > 0 else None
-    pb_fair = round(book_value * pb_ratio, 2) if book_value and pb_ratio > 0 else None
+    # 各模型計算
+    pe_fair = round(eps * pe_ratio, 2) if eps and pe_ratio > 0 and 0 < pe_ratio < 100 else None
+    pb_fair = round(book_value * pb_ratio, 2) if book_value and pb_ratio > 0 and 0 < pb_ratio < 20 else None
     dcf_fair = calculate_dcf(eps, growth_rate) if eps > 0 else None
     ddm_fair = calculate_ddm(dividend_rate) if dividend_rate and dividend_rate > 0 else None
     ev_sales_fair = round(revenue_per_share * min(ev_to_sales, 5.0), 2) if revenue_per_share and revenue_per_share > 0 else None
 
-    weighted_sum = 0
-    total_weight = 0
-
+    # === 依產業設定權重 (只啟動該產業適用的模型) ===
     if sector == "Financial Services" or sector == "Utilities":
-        weights = { "ddm": 0.4, "pb": 0.3, "analyst": 0.2, "pe": 0.1, "dcf": 0.0, "ev_sales": 0.0 }
+        weights = { "ddm": 0.4, "pb": 0.4, "analyst": 0.2, "pe": 0.0, "dcf": 0.0, "ev_sales": 0.0 }
     elif sector == "Technology":
-        weights = { "dcf": 0.35, "pe": 0.25, "analyst": 0.25, "ev_sales": 0.15, "pb": 0.0, "ddm": 0.0 }
+        weights = { "dcf": 0.4, "pe": 0.3, "analyst": 0.3, "pb": 0.0, "ddm": 0.0, "ev_sales": 0.0 }
     else:
-        weights = { "dcf": 0.3, "pe": 0.3, "analyst": 0.2, "pb": 0.1, "ddm": 0.1, "ev_sales": 0.0 }
+        weights = { "dcf": 0.35, "pe": 0.35, "analyst": 0.3, "pb": 0.0, "ddm": 0.0, "ev_sales": 0.0 }
 
     models_dict = {
-        "dcf": dcf_fair,
-        "pe": pe_fair,
-        "pb": pb_fair,
-        "ddm": ddm_fair,
-        "ev_sales": ev_sales_fair,
-        "analyst": analyst_target
+        "dcf": ("DCF模型", dcf_fair),
+        "pe": ("P/E本益比", pe_fair),
+        "pb": ("P/B淨值比", pb_fair),
+        "ddm": ("DDM股利", ddm_fair),
+        "ev_sales": ("EV/Sales", ev_sales_fair),
+        "analyst": ("分析師目標價", analyst_target)
     }
 
-    for key, weight in weights.items():
-        if models_dict.get(key) is not None and weight > 0:
-            weighted_sum += models_dict[key] * weight
-            total_weight += weight
+    weighted_sum = 0
+    total_weight = 0
+    active_models_list = []
 
+    for key, weight in weights.items():
+        name, val = models_dict[key]
+        if val is not None and weight > 0:
+            # 偏差防禦：若模型估值異常偏離現價超過 4 倍（不合理極端值），進行上下限夾擠修正
+            if val > current_price * 4:
+                val = current_price * 4
+            elif val < current_price * 0.2:
+                val = current_price * 0.2
+
+            weighted_sum += val * weight
+            total_weight += weight
+            active_models_list.append(name)
+
+    # 若無指定權重模型有數值，退回有效模型平均
     if total_weight > 0:
         fair_value = round(weighted_sum / total_weight, 2)
     else:
-        valid_models = [m for m in models_dict.values() if m is not None]
-        fair_value = round(sum(valid_models) / len(valid_models), 2) if valid_models else current_price
+        valid_vals = [v[1] for v in models_dict.values() if v[1] is not None]
+        fair_value = round(sum(valid_vals) / len(valid_vals), 2) if valid_vals else current_price
 
-    upside = round(((fair_value - current_price) / current_price) * 100, 2) if current_price else 0
+    # 最終防禦：公允價不得低於現價的 20% 或高於 4 倍
+    fair_value = max(round(current_price * 0.2, 2), min(fair_value, round(current_price * 4.0, 2)))
+    
+    upside = round(((fair_value - current_price) / current_price) * 100, 2)
 
     confidence = "高"
-    if not analyst_target or total_weight < 0.6:
+    if not analyst_target or total_weight < 0.6 or eps <= 0:
         confidence = "低"
     elif total_weight < 0.8:
         confidence = "中"
 
-    # 動態彙整該股票實際啟動的模型名稱
-    active_models_list = []
-    if dcf_fair: active_models_list.append("DCF")
-    if ddm_fair: active_models_list.append("DDM")
-    if pe_fair: active_models_list.append("P/E")
-    if pb_fair: active_models_list.append("P/B")
-    if ev_sales_fair: active_models_list.append("EV/Sales")
-    if analyst_target: active_models_list.append("分析師目標價")
-    
     models_summary = " + ".join(active_models_list) if active_models_list else "綜合評估"
 
     return {
