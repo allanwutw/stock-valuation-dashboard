@@ -309,8 +309,8 @@
     "name": "中租-KY",
     "sector": "金融保險",
     "current_price": 103.5,
-    "fair_value": 116.91,
-    "upside_percent": 12.96,
+    "fair_value": 116.24,
+    "upside_percent": 12.31,
     "confidence": "高",
     "models_used": "DDM股利 + P/B淨值比 + 分析師目標價",
     "models": {
@@ -319,7 +319,7 @@
       "dcf_5yr": 244.63,
       "ddm_model": 119.48,
       "ev_sales": 119.53,
-      "analyst_target": 130.62354
+      "analyst_target": 127.25989
     }
   },
   {
@@ -727,8 +727,8 @@
     "name": "豐泰",
     "sector": "非必需消費",
     "current_price": 66.5,
-    "fair_value": 74.8,
-    "upside_percent": 12.48,
+    "fair_value": 74.37,
+    "upside_percent": 11.83,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
@@ -737,7 +737,7 @@
       "dcf_5yr": 84.65,
       "ddm_model": 84.46,
       "ev_sales": 67.6,
-      "analyst_target": 72.97692
+      "analyst_target": 71.55385
     }
   },
   {
@@ -879,8 +879,8 @@
     "name": "世芯-KY",
     "sector": "科技半導體",
     "current_price": 4020.0,
-    "fair_value": 3516.48,
-    "upside_percent": -12.53,
+    "fair_value": 3503.36,
+    "upside_percent": -12.85,
     "confidence": "中",
     "models_used": "DCF模型 + 分析師目標價",
     "models": {
@@ -889,7 +889,7 @@
       "dcf_5yr": 1523.3,
       "ddm_model": 670.94,
       "ev_sales": 1803.85,
-      "analyst_target": 5525.125
+      "analyst_target": 5494.5
     }
   },
   {
@@ -898,8 +898,8 @@
     "name": "矽力-KY",
     "sector": "科技半導體",
     "current_price": 437.5,
-    "fair_value": 366.68,
-    "upside_percent": -16.19,
+    "fair_value": 365.79,
+    "upside_percent": -16.39,
     "confidence": "中",
     "models_used": "DCF模型 + 分析師目標價",
     "models": {
@@ -908,7 +908,7 @@
       "dcf_5yr": 214.55,
       "ddm_model": 52.53,
       "ev_sales": 189.7,
-      "analyst_target": 563.91235
+      "analyst_target": 561.8535
     }
   },
   {
@@ -917,8 +917,8 @@
     "name": "Apple Inc.",
     "sector": "科技半導體",
     "current_price": 356.27,
-    "fair_value": 261.94,
-    "upside_percent": -26.48,
+    "fair_value": 261.62,
+    "upside_percent": -26.57,
     "confidence": "中",
     "models_used": "DCF模型 + 分析師目標價",
     "models": {
@@ -927,7 +927,7 @@
       "dcf_5yr": 198.62,
       "ddm_model": 22.25,
       "ev_sales": 114.3,
-      "analyst_target": 346.3655
+      "analyst_target": 345.6313
     }
   },
   {
@@ -1012,8 +1012,8 @@
     "name": "Meta Platforms, Inc.",
     "sector": "通訊服務",
     "current_price": 641.69,
-    "fair_value": 577.86,
-    "upside_percent": -9.95,
+    "fair_value": 578.16,
+    "upside_percent": -9.9,
     "confidence": "高",
     "models_used": "DDM股利 + DCF模型 + 分析師目標價",
     "models": {
@@ -1022,7 +1022,7 @@
       "dcf_5yr": 648.29,
       "ddm_model": 43.26,
       "ev_sales": 333.15,
-      "analyst_target": 850.1025
+      "analyst_target": 851.12494
     }
   },
   {
@@ -1145,8 +1145,8 @@
     "name": "ExxonMobil Holdings Corporation",
     "sector": "能源原物料",
     "current_price": 170.59,
-    "fair_value": 176.08,
-    "upside_percent": 3.22,
+    "fair_value": 176.03,
+    "upside_percent": 3.19,
     "confidence": "高",
     "models_used": "P/B淨值比 + 分析師目標價 + P/E本益比",
     "models": {
@@ -1155,7 +1155,7 @@
       "dcf_5yr": 214.99,
       "ddm_model": 88.17,
       "ev_sales": 173.07,
-      "analyst_target": 184.31818
+      "analyst_target": 184.18182
     }
   },
   {
@@ -1221,17 +1221,17 @@
     "name": "Home Depot, Inc. (The)",
     "sector": "非必需消費",
     "current_price": 348.69,
-    "fair_value": 343.08,
-    "upside_percent": -1.61,
+    "fair_value": 342.77,
+    "upside_percent": -1.7,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
       "pe_multiples": 348.69,
       "pb_multiples": null,
-      "dcf_5yr": 307.69,
+      "dcf_5yr": 306.99,
       "ddm_model": 191.99,
       "ev_sales": 411.54,
-      "analyst_target": 377.8125
+      "analyst_target": 377.59375
     }
   },
   {
@@ -1515,7 +1515,7 @@
       "pb_multiples": null,
       "dcf_5yr": 83.17,
       "ddm_model": 34.61,
-      "ev_sales": 56.07,
+      "ev_sales": 59.31,
       "analyst_target": 129.95833
     }
   },
@@ -1563,8 +1563,8 @@
     "name": "Walmart Inc.",
     "sector": "必需消費",
     "current_price": 128.09,
-    "fair_value": 94.67,
-    "upside_percent": -26.09,
+    "fair_value": 94.84,
+    "upside_percent": -25.96,
     "confidence": "中",
     "models_used": "DCF模型 + 分析師目標價",
     "models": {
@@ -1573,7 +1573,7 @@
       "dcf_5yr": 61.05,
       "ddm_model": 20.39,
       "ev_sales": 136.32,
-      "analyst_target": 130.4
+      "analyst_target": 130.775
     }
   },
   {
