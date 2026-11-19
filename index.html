@@ -18,8 +18,9 @@
     .filters button:hover { background: #edf2f7; }
     .filters button.active { background: #3182ce; color: white; border-color: #3182ce; }
     
-    /* 獨立追蹤開關啟動時的樣式（金黃色系區隔市場按鈕） */
+    /* 獨立過濾開關啟動時的樣式 */
     .filters button.star-filter-active { background: #ecc94b; color: #744210; border-color: #d69e2e; font-weight: 600; }
+    .filters button.etf-filter-active { background: #319795; color: white; border-color: #2c7a7b; font-weight: 600; }
     .filter-divider { width: 1px; height: 24px; background-color: #cbd5e0; margin: 0 4px; }
 
     .search-box input { padding: 8px 14px; border: 1px solid #cbd5e0; border-radius: 6px; width: 220px; font-size: 15px; }
@@ -44,18 +45,19 @@
 <body>
   <div class="container">
     <h1>📈 多模型股票公允估值儀表板</h1>
-    <p class="subtitle">台美權值股多模型動態估值與即時潛在報酬監控</p>
+    <p class="subtitle">台美權值股與 ETF 多模型動態估值與即時潛在報酬監控</p>
     
     <div class="top-bar">
       <div class="filters">
         <!-- 市場單選群組 -->
         <button id="btn-all" onclick="setMarketFilter('all')">🌐 全部市場</button>
-        <button id="btn-tw" class="active" onclick="setMarketFilter('tw')">🇹🇼 台灣股票</button>
-        <button id="btn-us" onclick="setMarketFilter('us')">🇺🇸 美國股票</button>
+        <button id="btn-tw" class="active" onclick="setMarketFilter('tw')">🇹🇼 台灣市場</button>
+        <button id="btn-us" onclick="setMarketFilter('us')">🇺🇸 美國市場</button>
         
         <div class="filter-divider"></div>
         
-        <!-- 追蹤獨立開關 -->
+        <!-- 屬性與追蹤獨立開關（可自由疊加） -->
+        <button id="btn-etf" onclick="toggleEtfFilter()">📦 ETF</button>
         <button id="btn-starred" onclick="toggleStarredFilter()">⭐ 只顯示追蹤</button>
       </div>
       <div class="search-box">
@@ -90,6 +92,7 @@
   <script>
     let allData = [];
     let currentMarket = 'tw';      // 'all' | 'tw' | 'us'
+    let onlyEtf = false;           // true | false (是否開啟只看 ETF)
     let onlyStarred = false;       // true | false (是否開啟只看追蹤)
     let searchQuery = '';
     let currentSortColumn = null;
@@ -116,7 +119,15 @@
       renderTable();
     }
 
-    // 切換追蹤開關（可與任何市場疊加）
+    // 切換 ETF 開關（可與市場、追蹤疊加）
+    function toggleEtfFilter() {
+      onlyEtf = !onlyEtf;
+      const btnEtf = document.getElementById('btn-etf');
+      btnEtf.className = onlyEtf ? 'etf-filter-active' : '';
+      renderTable();
+    }
+
+    // 切換追蹤開關（可與市場、ETF 疊加）
     function toggleStarredFilter() {
       onlyStarred = !onlyStarred;
       const btnStarred = document.getElementById('btn-starred');
@@ -141,83 +152,3 @@
 
     function renderTable() {
       let filteredData = allData.filter(item => {
-        const isTW = item.raw_ticker ? item.raw_ticker.endsWith('.TW') : item.symbol.length <= 4 && !isNaN(item.symbol);
-        
-        // 1. 市場條件判斷
-        const matchesMarket = 
-          (currentMarket === 'all') ||
-          (currentMarket === 'tw' && isTW) ||
-          (currentMarket === 'us' && !isTW);
-        
-        // 2. 追蹤條件判斷（若開啟 onlyStarred，則必須在 starredSymbols 內）
-        const matchesStarred = !onlyStarred || starredSymbols.includes(item.symbol);
-
-        // 3. 搜尋關鍵字判斷
-        const matchesSearch = item.symbol.toLowerCase().includes(searchQuery) || item.name.toLowerCase().includes(searchQuery);
-        
-        return matchesMarket && matchesStarred && matchesSearch;
-      });
-
-      if (currentSortColumn) {
-        filteredData.sort((a, b) => {
-          let valA = a[currentSortColumn];
-          let valB = b[currentSortColumn];
-          if (typeof valA === 'string') {
-            return sortAscending ? valA.localeCompare(valB) : valB.localeCompare(valA);
-          }
-          return sortAscending ? valA - valB : valB - valA;
-        });
-      }
-
-      const tbody = document.getElementById('stock-table');
-      tbody.innerHTML = '';
-
-      if (filteredData.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: #718096;">目前沒有符合的股票資料</td></tr>`;
-        return;
-      }
-
-      filteredData.forEach(item => {
-        const isStarred = starredSymbols.includes(item.symbol);
-        const starClass = isStarred ? 'star-btn starred' : 'star-btn';
-        
-        // 潛在報酬：正數紅字、負數綠字 (紅漲綠跌)
-        const upsideClass = item.upside_percent >= 0 ? 'badge-positive' : 'badge-negative';
-        const sign = item.upside_percent > 0 ? '+' : '';
-        const confBadge = `<span class="badge-conf-${item.confidence}">${item.confidence}</span>`;
-        
-        const row = `
-          <tr>
-            <td>
-              <div style="display: flex; align-items: center;">
-                <button class="${starClass}" onclick="toggleStar('${item.symbol}', event)">${isStarred ? '★' : '☆'}</button>
-                <div>
-                  <strong style="font-size: 16px; color: #2d3748;">${item.symbol}</strong><br>
-                  <span style="color:#718096; font-size: 13px;">${item.name}</span>
-                </div>
-              </div>
-            </td>
-            <td>${item.sector}</td>
-            <td>$${item.current_price ?? '-'}</td>
-            <td><strong>$${item.fair_value ?? '-'}</strong></td>
-            <td class="${upsideClass}">${sign}${item.upside_percent ?? 0}%</td>
-            <td><small style="color: #4a5568; line-height: 1.4; display: inline-block;">${item.models_used}</small></td>
-            <td>${confBadge}</td>
-          </tr>
-        `;
-        tbody.innerHTML += row;
-      });
-    }
-
-    fetch('valuation_data.json')
-      .then(res => res.json())
-      .then(data => {
-        allData = data;
-        renderTable();
-      })
-      .catch(err => {
-        document.getElementById('stock-table').innerHTML = `<tr><td colspan="7" style="text-align: center; color: #e53e3e;">載入資料失敗。</td></tr>`;
-      });
-  </script>
-</body>
-</html>
