@@ -99,6 +99,11 @@
     let sortAscending = true;
     let starredSymbols = JSON.parse(localStorage.getItem('starredStocks')) || [];
 
+    function getMarketType(item) {
+      const raw = (item.raw_ticker || item.symbol || '').toUpperCase();
+      return raw.endsWith('.TW') || raw.endsWith('.TWO') ? 'tw' : 'us';
+    }
+
     function toggleStar(symbol, event) {
       event.stopPropagation();
       if (starredSymbols.includes(symbol)) {
@@ -145,10 +150,122 @@
         sortAscending = !sortAscending;
       } else {
         currentSortColumn = column;
-        sortAscending = true;
+        sortAscending = column === 'sector';
       }
       renderTable();
     }
 
+    function formatNumber(val) {
+      if (val === null || val === undefined || Number.isNaN(Number(val))) return '-';
+      return Number(val).toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function getConfidenceRank(conf) {
+      if (conf === '高') return 3;
+      if (conf === '中') return 2;
+      if (conf === '低') return 1;
+      return 0;
+    }
+
     function renderTable() {
+      const tbody = document.getElementById('stock-table');
+
       let filteredData = allData.filter(item => {
+        const marketType = getMarketType(item);
+        if (currentMarket !== 'all' && marketType !== currentMarket) {
+          return false;
+        }
+        if (onlyEtf && !item.is_etf) {
+          return false;
+        }
+        if (onlyStarred && !starredSymbols.includes(item.symbol)) {
+          return false;
+        }
+        if (searchQuery) {
+          const symbolMatch = (item.symbol || '').toLowerCase().includes(searchQuery);
+          const nameMatch = (item.name || '').toLowerCase().includes(searchQuery);
+          const sectorMatch = (item.sector || '').toLowerCase().includes(searchQuery);
+          if (!symbolMatch && !nameMatch && !sectorMatch) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      if (currentSortColumn) {
+        filteredData.sort((a, b) => {
+          let valA = a[currentSortColumn];
+          let valB = b[currentSortColumn];
+
+          if (currentSortColumn === 'confidence') {
+            valA = getConfidenceRank(valA);
+            valB = getConfidenceRank(valB);
+          } else if (typeof valA === 'string' || typeof valB === 'string') {
+            valA = (valA || '').toString();
+            valB = (valB || '').toString();
+            return sortAscending
+              ? valA.localeCompare(valB, 'zh-Hant')
+              : valB.localeCompare(valA, 'zh-Hant');
+          } else {
+            valA = Number(valA ?? -Infinity);
+            valB = Number(valB ?? -Infinity);
+          }
+
+          return sortAscending ? valA - valB : valB - valA;
+        });
+      }
+
+      if (filteredData.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: #718096;">查無符合條件的股票資料</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filteredData.map(item => {
+        const isStarred = starredSymbols.includes(item.symbol);
+        const upside = Number(item.upside_percent ?? 0);
+        const upsideClass = upside > 0 ? 'badge-positive' : (upside < 0 ? 'badge-negative' : '');
+        const upsideText = `${upside > 0 ? '+' : ''}${upside.toFixed(2)}%`;
+        const confClass = `badge-conf-${item.confidence || '低'}`;
+        const marketType = getMarketType(item);
+        const currencyPrefix = marketType === 'tw' ? 'NT$' : '$';
+
+        return `
+          <tr>
+            <td>
+              <button class="star-btn ${isStarred ? 'starred' : ''}" onclick="toggleStar('${item.symbol}', event)" title="加入/取消追蹤">★</button>
+              <strong>${item.symbol}</strong> ${item.name}
+            </td>
+            <td>${item.sector || '-'}</td>
+            <td>${currencyPrefix}${formatNumber(item.current_price)}</td>
+            <td>${currencyPrefix}${formatNumber(item.fair_value)}</td>
+            <td class="${upsideClass}">${upsideText}</td>
+            <td>${item.models_used || '-'}</td>
+            <td><span class="${confClass}">${item.confidence || '-'}</span></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function loadValuationData() {
+      const tbody = document.getElementById('stock-table');
+      try {
+        const response = await fetch(`./valuation_data.json?t=${Date.now()}`);
+        if (!response.ok) {
+          throw new Error(`HTTP 狀態碼：${response.status}`);
+        }
+        const data = await response.json();
+        allData = Array.isArray(data) ? data : [];
+        renderTable();
+      } catch (err) {
+        console.error('載入 valuation_data.json 失敗：', err);
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: #e53e3e;">資料載入失敗：${err.message}</td></tr>`;
+      }
+    }
+
+    loadValuationData();
+  </script>
+</body>
+</html>
