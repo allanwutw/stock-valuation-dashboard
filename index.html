@@ -11,9 +11,17 @@
     h1 { margin-bottom: 6px; font-size: 26px; color: #1a202c; }
     p.subtitle { color: #718096; margin-bottom: 20px; font-size: 15px; }
     .top-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
-    .filters { display: flex; gap: 10px; }
-    .filters button { padding: 8px 16px; border: 1px solid #cbd5e0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: 500; white-space: nowrap; }
+    
+    /* 按鈕群組與分隔線樣式 */
+    .filters { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .filters button { padding: 8px 16px; border: 1px solid #cbd5e0; background: #fff; color: #2d3748; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: 500; white-space: nowrap; transition: all 0.15s ease; }
+    .filters button:hover { background: #edf2f7; }
     .filters button.active { background: #3182ce; color: white; border-color: #3182ce; }
+    
+    /* 獨立追蹤開關啟動時的樣式（金黃色系區隔市場按鈕） */
+    .filters button.star-filter-active { background: #ecc94b; color: #744210; border-color: #d69e2e; font-weight: 600; }
+    .filter-divider { width: 1px; height: 24px; background-color: #cbd5e0; margin: 0 4px; }
+
     .search-box input { padding: 8px 14px; border: 1px solid #cbd5e0; border-radius: 6px; width: 220px; font-size: 15px; }
     .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     table { width: 100%; border-collapse: collapse; margin-top: 5px; }
@@ -40,9 +48,15 @@
     
     <div class="top-bar">
       <div class="filters">
-        <button id="btn-tw" class="active" onclick="setFilter('tw')">🇹🇼 台灣股票</button>
-        <button id="btn-us" onclick="setFilter('us')">🇺🇸 美國股票</button>
-        <button id="btn-starred" onclick="setFilter('starred')">⭐ 我的追蹤</button>
+        <!-- 市場單選群組 -->
+        <button id="btn-all" onclick="setMarketFilter('all')">🌐 全部市場</button>
+        <button id="btn-tw" class="active" onclick="setMarketFilter('tw')">🇹🇼 台灣股票</button>
+        <button id="btn-us" onclick="setMarketFilter('us')">🇺🇸 美國股票</button>
+        
+        <div class="filter-divider"></div>
+        
+        <!-- 追蹤獨立開關 -->
+        <button id="btn-starred" onclick="toggleStarredFilter()">⭐ 只顯示追蹤</button>
       </div>
       <div class="search-box">
         <input type="text" id="search-input" placeholder="🔍 搜尋名稱或代號..." oninput="handleSearch()">
@@ -75,7 +89,8 @@
 
   <script>
     let allData = [];
-    let currentFilter = 'tw';
+    let currentMarket = 'tw';      // 'all' | 'tw' | 'us'
+    let onlyStarred = false;       // true | false (是否開啟只看追蹤)
     let searchQuery = '';
     let currentSortColumn = null;
     let sortAscending = true;
@@ -92,11 +107,20 @@
       renderTable();
     }
 
-    function setFilter(filter) {
-      currentFilter = filter;
-      document.getElementById('btn-tw').className = filter === 'tw' ? 'active' : '';
-      document.getElementById('btn-us').className = filter === 'us' ? 'active' : '';
-      document.getElementById('btn-starred').className = filter === 'starred' ? 'active' : '';
+    // 切換市場分類（單選）
+    function setMarketFilter(market) {
+      currentMarket = market;
+      document.getElementById('btn-all').className = market === 'all' ? 'active' : '';
+      document.getElementById('btn-tw').className = market === 'tw' ? 'active' : '';
+      document.getElementById('btn-us').className = market === 'us' ? 'active' : '';
+      renderTable();
+    }
+
+    // 切換追蹤開關（可與任何市場疊加）
+    function toggleStarredFilter() {
+      onlyStarred = !onlyStarred;
+      const btnStarred = document.getElementById('btn-starred');
+      btnStarred.className = onlyStarred ? 'star-filter-active' : '';
       renderTable();
     }
 
@@ -118,13 +142,20 @@
     function renderTable() {
       let filteredData = allData.filter(item => {
         const isTW = item.raw_ticker ? item.raw_ticker.endsWith('.TW') : item.symbol.length <= 4 && !isNaN(item.symbol);
-        const matchesFilter = 
-          (currentFilter === 'tw' && isTW) ||
-          (currentFilter === 'us' && !isTW) ||
-          (currentFilter === 'starred' && starredSymbols.includes(item.symbol));
         
+        // 1. 市場條件判斷
+        const matchesMarket = 
+          (currentMarket === 'all') ||
+          (currentMarket === 'tw' && isTW) ||
+          (currentMarket === 'us' && !isTW);
+        
+        // 2. 追蹤條件判斷（若開啟 onlyStarred，則必須在 starredSymbols 內）
+        const matchesStarred = !onlyStarred || starredSymbols.includes(item.symbol);
+
+        // 3. 搜尋關鍵字判斷
         const matchesSearch = item.symbol.toLowerCase().includes(searchQuery) || item.name.toLowerCase().includes(searchQuery);
-        return matchesFilter && matchesSearch;
+        
+        return matchesMarket && matchesStarred && matchesSearch;
       });
 
       if (currentSortColumn) {
