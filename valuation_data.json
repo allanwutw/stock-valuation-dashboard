@@ -6,10 +6,75 @@
     "sector": "ETF - 市值型",
     "is_etf": true,
     "current_price": 84.45,
-    "fair_value": 95.77,
-    "upside_percent": 13.4,
+    "fair_value": 95.76,
+    "upside_percent": 13.39,
     "confidence": "高",
     "models_used": "成分股加權 (50/50檔, 覆蓋100.0%)",
+    "models": {}
+  },
+  {
+    "symbol": "009800",
+    "raw_ticker": "009800.TW",
+    "name": "中信NASDAQ",
+    "sector": "ETF - 美股科技",
+    "is_etf": true,
+    "current_price": 12.01,
+    "fair_value": 12.06,
+    "upside_percent": 0.44,
+    "confidence": "高",
+    "models_used": "成分股加權 (25/25檔, 覆蓋100.0%)",
+    "models": {}
+  },
+  {
+    "symbol": "00830",
+    "raw_ticker": "00830.TW",
+    "name": "國泰費城半導體",
+    "sector": "ETF - 半導體",
+    "is_etf": true,
+    "current_price": 67.0,
+    "fair_value": 69.76,
+    "upside_percent": 4.12,
+    "confidence": "高",
+    "models_used": "成分股加權 (20/20檔, 覆蓋100.0%)",
+    "models": {}
+  },
+  {
+    "symbol": "SPYM",
+    "raw_ticker": "SPYM",
+    "name": "SPDR S&P 500 迷你 ETF",
+    "sector": "ETF - 美股大盤",
+    "is_etf": true,
+    "current_price": 84.26,
+    "fair_value": 81.58,
+    "upside_percent": -3.18,
+    "confidence": "高",
+    "models_used": "成分股加權 (25/25檔, 覆蓋100.0%)",
+    "models": {}
+  },
+  {
+    "symbol": "QQQM",
+    "raw_ticker": "QQQM",
+    "name": "Invesco NASDAQ 100",
+    "sector": "ETF - 美股科技",
+    "is_etf": true,
+    "current_price": 265.64,
+    "fair_value": 266.81,
+    "upside_percent": 0.44,
+    "confidence": "高",
+    "models_used": "成分股加權 (25/25檔, 覆蓋100.0%)",
+    "models": {}
+  },
+  {
+    "symbol": "SOXX",
+    "raw_ticker": "SOXX",
+    "name": "iShares 半導體 ETF",
+    "sector": "ETF - 半導體",
+    "is_etf": true,
+    "current_price": 137.95,
+    "fair_value": 142.75,
+    "upside_percent": 3.48,
+    "confidence": "高",
+    "models_used": "成分股加權 (20/20檔, 覆蓋100.0%)",
     "models": {}
   },
   {
@@ -63,7 +128,7 @@
     "models": {
       "pe_multiples": null,
       "pb_multiples": null,
-      "dcf_5yr": 1375.77,
+      "dcf_5yr": 1299.02,
       "ddm_model": 1102.1,
       "ev_sales": 1361.35,
       "analyst_target": 5025.0
@@ -310,7 +375,7 @@
     "models": {
       "pe_multiples": 39.6,
       "pb_multiples": 39.6,
-      "dcf_5yr": 46.89,
+      "dcf_5yr": 44.9,
       "ddm_model": 28.84,
       "ev_sales": 8.15,
       "analyst_target": 44.2625
@@ -445,7 +510,7 @@
       "pb_multiples": 24.35,
       "dcf_5yr": 6.41,
       "ddm_model": 16.48,
-      "ev_sales": 40.3,
+      "ev_sales": 36.61,
       "analyst_target": 28.83333
     }
   },
@@ -614,7 +679,7 @@
     "models": {
       "pe_multiples": 33.95,
       "pb_multiples": 33.95,
-      "dcf_5yr": 40.26,
+      "dcf_5yr": 41.8,
       "ddm_model": 20.6,
       "ev_sales": 23.19,
       "analyst_target": 36.58257
@@ -683,14 +748,14 @@
     "name": "遠傳",
     "sector": "通訊服務",
     "current_price": 103.0,
-    "fair_value": 90.5,
-    "upside_percent": -12.14,
+    "fair_value": 90.58,
+    "upside_percent": -12.06,
     "confidence": "高",
     "models_used": "DDM股利 + DCF模型 + 分析師目標價",
     "models": {
-      "pe_multiples": 101.75,
+      "pe_multiples": 102.75,
       "pb_multiples": 87.17,
-      "dcf_5yr": 90.02,
+      "dcf_5yr": 90.29,
       "ddm_model": 78.49,
       "ev_sales": 112.98,
       "analyst_target": 107.0
@@ -1234,14 +1299,14 @@
     "name": "研華",
     "sector": "科技半導體",
     "current_price": 520.0,
-    "fair_value": 542.06,
-    "upside_percent": 4.24,
+    "fair_value": 522.94,
+    "upside_percent": 0.57,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
-      "pe_multiples": 491.25,
+      "pe_multiples": 462.0,
       "pb_multiples": null,
-      "dcf_5yr": 434.63,
+      "dcf_5yr": 408.75,
       "ddm_model": 229.9,
       "ev_sales": 390.94,
       "analyst_target": 736.1177
@@ -1595,14 +1660,14 @@
     "name": "Home Depot, Inc. (The)",
     "sector": "非必需消費",
     "current_price": 336.68,
-    "fair_value": 330.58,
-    "upside_percent": -1.81,
+    "fair_value": 331.35,
+    "upside_percent": -1.58,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
       "pe_multiples": 336.68,
       "pb_multiples": null,
-      "dcf_5yr": 285.89,
+      "dcf_5yr": 288.11,
       "ddm_model": 191.99,
       "ev_sales": 397.19,
       "analyst_target": 375.59375
@@ -1678,7 +1743,7 @@
     "models": {
       "pe_multiples": null,
       "pb_multiples": null,
-      "dcf_5yr": 103.51,
+      "dcf_5yr": 95.55,
       "ddm_model": null,
       "ev_sales": 97.47,
       "analyst_target": 657.74286
@@ -1861,14 +1926,14 @@
     "name": "McDonald's Corporation",
     "sector": "非必需消費",
     "current_price": 272.35,
-    "fair_value": 266.36,
-    "upside_percent": -2.2,
+    "fair_value": 268.16,
+    "upside_percent": -1.54,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
       "pe_multiples": 272.35,
       "pb_multiples": null,
-      "dcf_5yr": 232.38,
+      "dcf_5yr": 237.53,
       "ddm_model": 159.03,
       "ev_sales": 137.06,
       "analyst_target": 299.0
@@ -1918,14 +1983,14 @@
     "name": "Linde plc",
     "sector": "綜合產業",
     "current_price": 510.21,
-    "fair_value": 412.68,
-    "upside_percent": -19.12,
+    "fair_value": 413.67,
+    "upside_percent": -18.92,
     "confidence": "高",
     "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
     "models": {
-      "pe_multiples": 375.0,
+      "pe_multiples": 376.5,
       "pb_multiples": null,
-      "dcf_5yr": 331.78,
+      "dcf_5yr": 333.1,
       "ddm_model": 131.84,
       "ev_sales": 273.79,
       "analyst_target": 551.03705
@@ -1994,14 +2059,14 @@
     "name": "Verizon Communications Inc.",
     "sector": "通訊服務",
     "current_price": 45.74,
-    "fair_value": 64.52,
-    "upside_percent": 41.06,
+    "fair_value": 64.73,
+    "upside_percent": 41.52,
     "confidence": "高",
     "models_used": "DDM股利 + DCF模型 + 分析師目標價",
     "models": {
       "pe_multiples": 45.74,
       "pb_multiples": 45.74,
-      "dcf_5yr": 86.7,
+      "dcf_5yr": 87.37,
       "ddm_model": 58.3,
       "ev_sales": 91.1,
       "analyst_target": 50.65
@@ -2018,7 +2083,7 @@
     "confidence": "低",
     "models_used": "P/E本益比 + 分析師目標價",
     "models": {
-      "pe_multiples": -36.0,
+      "pe_multiples": -35.25,
       "pb_multiples": 55.72,
       "dcf_5yr": null,
       "ddm_model": null,
@@ -2157,6 +2222,329 @@
       "ddm_model": 113.71,
       "ev_sales": 271.98,
       "analyst_target": 407.08194
+    }
+  },
+  {
+    "symbol": "TMUS",
+    "raw_ticker": "TMUS",
+    "name": "T-Mobile US, Inc.",
+    "sector": "通訊服務",
+    "current_price": 162.53,
+    "fair_value": 175.25,
+    "upside_percent": 7.83,
+    "confidence": "高",
+    "models_used": "DDM股利 + DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": 162.53,
+      "pb_multiples": 162.53,
+      "dcf_5yr": 229.37,
+      "ddm_model": 96.41,
+      "ev_sales": 261.82,
+      "analyst_target": 226.24
+    }
+  },
+  {
+    "symbol": "ISRG",
+    "raw_ticker": "ISRG",
+    "name": "Intuitive Surgical, Inc.",
+    "sector": "醫療保健",
+    "current_price": 407.24,
+    "fair_value": 335.12,
+    "upside_percent": -17.71,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": 182.92,
+      "ddm_model": null,
+      "ev_sales": 114.72,
+      "analyst_target": 488.53333
+    }
+  },
+  {
+    "symbol": "AMAT",
+    "raw_ticker": "AMAT",
+    "name": "Applied Materials, Inc.",
+    "sector": "科技半導體",
+    "current_price": 338.93,
+    "fair_value": 358.82,
+    "upside_percent": 5.87,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 315.5,
+      "pb_multiples": null,
+      "dcf_5yr": 279.13,
+      "ddm_model": 43.67,
+      "ev_sales": 152.03,
+      "analyst_target": 508.395
+    }
+  },
+  {
+    "symbol": "BKNG",
+    "raw_ticker": "BKNG",
+    "name": "Booking Holdings Inc. Common St",
+    "sector": "非必需消費",
+    "current_price": 147.32,
+    "fair_value": 187.6,
+    "upside_percent": 27.34,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 147.32,
+      "pb_multiples": null,
+      "dcf_5yr": 203.93,
+      "ddm_model": 34.61,
+      "ev_sales": 126.61,
+      "analyst_target": 215.5294
+    }
+  },
+  {
+    "symbol": "MU",
+    "raw_ticker": "MU",
+    "name": "Micron Technology, Inc.",
+    "sector": "科技半導體",
+    "current_price": 690.44,
+    "fair_value": 1070.18,
+    "upside_percent": 55.0,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 690.44,
+      "pb_multiples": null,
+      "dcf_5yr": 1644.06,
+      "ddm_model": 12.36,
+      "ev_sales": 413.63,
+      "analyst_target": 1035.66
+    }
+  },
+  {
+    "symbol": "LRCX",
+    "raw_ticker": "LRCX",
+    "name": "Lam Research Corporation",
+    "sector": "科技半導體",
+    "current_price": 203.68,
+    "fair_value": 201.34,
+    "upside_percent": -1.15,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 167.75,
+      "pb_multiples": null,
+      "dcf_5yr": 148.41,
+      "ddm_model": 27.19,
+      "ev_sales": 73.06,
+      "analyst_target": 305.52
+    }
+  },
+  {
+    "symbol": "ADI",
+    "raw_ticker": "ADI",
+    "name": "Analog Devices, Inc.",
+    "sector": "科技半導體",
+    "current_price": 377.44,
+    "fair_value": 311.18,
+    "upside_percent": -17.56,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": 186.24,
+      "ddm_model": 90.64,
+      "ev_sales": 99.49,
+      "analyst_target": 474.46875
+    }
+  },
+  {
+    "symbol": "KLAC",
+    "raw_ticker": "KLAC",
+    "name": "KLA Corporation",
+    "sector": "科技半導體",
+    "current_price": 141.48,
+    "fair_value": 141.38,
+    "upside_percent": -0.07,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": 88.25,
+      "ddm_model": 18.95,
+      "ev_sales": 38.8,
+      "analyst_target": 212.21999999999997
+    }
+  },
+  {
+    "symbol": "TSM",
+    "raw_ticker": "TSM",
+    "name": "Taiwan Semiconductor Manufactur",
+    "sector": "科技半導體",
+    "current_price": 352.09,
+    "fair_value": 400.58,
+    "upside_percent": 13.77,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 352.09,
+      "pb_multiples": null,
+      "dcf_5yr": 341.29,
+      "ddm_model": 77.66,
+      "ev_sales": 282.23,
+      "analyst_target": 528.135
+    }
+  },
+  {
+    "symbol": "ASML",
+    "raw_ticker": "ASML",
+    "name": "ASML Holding N.V. - New York Re",
+    "sector": "科技半導體",
+    "current_price": 1356.2,
+    "fair_value": 1274.65,
+    "upside_percent": -6.01,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 1016.0,
+      "pb_multiples": null,
+      "dcf_5yr": 898.89,
+      "ddm_model": 191.79,
+      "ev_sales": 6.46,
+      "analyst_target": 2034.3000000000002
+    }
+  },
+  {
+    "symbol": "MRVL",
+    "raw_ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "sector": "科技半導體",
+    "current_price": 138.47,
+    "fair_value": 128.58,
+    "upside_percent": -7.14,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": 67.24,
+      "ddm_model": 4.94,
+      "ev_sales": 37.85,
+      "analyst_target": 207.70499999999998
+    }
+  },
+  {
+    "symbol": "NXPI",
+    "raw_ticker": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "sector": "科技半導體",
+    "current_price": 251.76,
+    "fair_value": 278.52,
+    "upside_percent": 10.63,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 251.76,
+      "pb_multiples": null,
+      "dcf_5yr": 281.13,
+      "ddm_model": 83.64,
+      "ev_sales": 191.3,
+      "analyst_target": 301.8
+    }
+  },
+  {
+    "symbol": "MCHP",
+    "raw_ticker": "MCHP",
+    "name": "Microchip Technology Incorporat",
+    "sector": "科技半導體",
+    "current_price": 58.47,
+    "fair_value": 53.87,
+    "upside_percent": -7.87,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": 42.71,
+      "dcf_5yr": 29.42,
+      "ddm_model": 37.49,
+      "ev_sales": 36.18,
+      "analyst_target": 86.48
+    }
+  },
+  {
+    "symbol": "ON",
+    "raw_ticker": "ON",
+    "name": "ON Semiconductor Corporation",
+    "sector": "科技半導體",
+    "current_price": 65.72,
+    "fair_value": 62.82,
+    "upside_percent": -4.41,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": 65.72,
+      "dcf_5yr": 37.82,
+      "ddm_model": null,
+      "ev_sales": 56.63,
+      "analyst_target": 96.16
+    }
+  },
+  {
+    "symbol": "MPWR",
+    "raw_ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "sector": "科技半導體",
+    "current_price": 1295.86,
+    "fair_value": 1155.11,
+    "upside_percent": -10.86,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": null,
+      "dcf_5yr": 403.44,
+      "ddm_model": 164.8,
+      "ev_sales": 267.31,
+      "analyst_target": 1831.3572
+    }
+  },
+  {
+    "symbol": "TER",
+    "raw_ticker": "TER",
+    "name": "Teradyne, Inc.",
+    "sector": "科技半導體",
+    "current_price": 227.43,
+    "fair_value": 244.57,
+    "upside_percent": 7.54,
+    "confidence": "高",
+    "models_used": "DCF模型 + P/E本益比 + 分析師目標價",
+    "models": {
+      "pe_multiples": 217.5,
+      "pb_multiples": null,
+      "dcf_5yr": 192.43,
+      "ddm_model": 10.71,
+      "ev_sales": 111.92,
+      "analyst_target": 341.145
+    }
+  },
+  {
+    "symbol": "SWKS",
+    "raw_ticker": "SWKS",
+    "name": "Skyworks Solutions, Inc.",
+    "sector": "科技半導體",
+    "current_price": 78.66,
+    "fair_value": 56.38,
+    "upside_percent": -28.32,
+    "confidence": "中",
+    "models_used": "DCF模型 + 分析師目標價",
+    "models": {
+      "pe_multiples": null,
+      "pb_multiples": 78.66,
+      "dcf_5yr": 25.22,
+      "ddm_model": null,
+      "ev_sales": 92.39,
+      "analyst_target": 79.11111
     }
   }
 ]
