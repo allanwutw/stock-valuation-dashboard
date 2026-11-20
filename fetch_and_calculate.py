@@ -19,6 +19,7 @@ TW_NAME_MAP = {
     "3665.TW": "貿聯-KY", "2395.TW": "研華", "2449.TW": "京元電子", "7769.TW": "鴻勁"
 }
 
+# 核心成分股權重設定（涵蓋前大權值股，確保覆蓋率與計算精準度）
 ETF_HOLDINGS_CONFIG = {
     "0050.TW": {
         "symbol": "0050",
@@ -36,17 +37,86 @@ ETF_HOLDINGS_CONFIG = {
             ("5880.TW", 0.33), ("3665.TW", 0.31), ("2603.TW", 0.31), ("2395.TW", 0.30), ("2449.TW", 0.25),
             ("7769.TW", 0.22), ("8046.TW", 0.22), ("4904.TW", 0.21), ("3045.TW", 0.20), ("6505.TW", 0.11)
         ]
+    },
+    "009800.TW": {
+        "symbol": "009800",
+        "name": "中信NASDAQ",
+        "sector": "ETF - 美股科技",
+        "holdings": [
+            ("AAPL", 8.9), ("NVDA", 8.5), ("MSFT", 8.1), ("AMZN", 5.6), ("AVGO", 4.8),
+            ("META", 4.6), ("TSLA", 3.8), ("GOOGL", 4.9), ("COST", 2.7), ("NFLX", 2.4),
+            ("AMD", 1.8), ("PEP", 1.5), ("LIN", 1.5), ("CSCO", 1.5), ("TMUS", 1.5),
+            ("ADBE", 1.4), ("QCOM", 1.3), ("TXN", 1.2), ("INTU", 1.2), ("ISRG", 1.2),
+            ("AMAT", 1.1), ("AMGN", 1.1), ("BKNG", 1.0), ("MU", 0.9), ("LRCX", 0.8)
+        ]
+    },
+    "00830.TW": {
+        "symbol": "00830",
+        "name": "國泰費城半導體",
+        "sector": "ETF - 半導體",
+        "holdings": [
+            ("NVDA", 11.5), ("AVGO", 9.8), ("AMD", 7.6), ("QCOM", 6.8), ("TXN", 6.2),
+            ("AMAT", 5.4), ("MU", 4.8), ("LRCX", 4.6), ("ADI", 4.5), ("KLAC", 4.3),
+            ("INTC", 4.1), ("TSM", 4.0), ("ASML", 3.6), ("MRVL", 3.5), ("NXPI", 3.4),
+            ("MCHP", 2.9), ("ON", 2.3), ("MPWR", 2.2), ("TER", 1.6), ("SWKS", 1.4)
+        ]
+    },
+    "SPYM": {
+        "symbol": "SPYM",
+        "name": "SPDR S&P 500 迷你 ETF",
+        "sector": "ETF - 美股大盤",
+        "holdings": [
+            ("AAPL", 7.1), ("NVDA", 6.8), ("MSFT", 6.3), ("AMZN", 3.8), ("META", 2.6),
+            ("GOOGL", 3.7), ("TSLA", 1.9), ("BRK-B", 1.7), ("AVGO", 1.7), ("JPM", 1.4),
+            ("LLY", 1.4), ("UNH", 1.2), ("XOM", 1.1), ("V", 1.1), ("MA", 0.9),
+            ("COST", 0.9), ("HD", 0.8), ("PG", 0.8), ("WMT", 0.8), ("JNJ", 0.8),
+            ("NFLX", 0.7), ("BAC", 0.7), ("ABBV", 0.7), ("CRM", 0.7), ("CVX", 0.6)
+        ]
+    },
+    "QQQM": {
+        "symbol": "QQQM",
+        "name": "Invesco NASDAQ 100",
+        "sector": "ETF - 美股科技",
+        "holdings": [
+            ("AAPL", 8.9), ("NVDA", 8.5), ("MSFT", 8.1), ("AMZN", 5.6), ("AVGO", 4.8),
+            ("META", 4.6), ("TSLA", 3.8), ("GOOGL", 4.9), ("COST", 2.7), ("NFLX", 2.4),
+            ("AMD", 1.8), ("PEP", 1.5), ("LIN", 1.5), ("CSCO", 1.5), ("TMUS", 1.5),
+            ("ADBE", 1.4), ("QCOM", 1.3), ("TXN", 1.2), ("INTU", 1.2), ("ISRG", 1.2),
+            ("AMAT", 1.1), ("AMGN", 1.1), ("BKNG", 1.0), ("MU", 0.9), ("LRCX", 0.8)
+        ]
+    },
+    "SOXX": {
+        "symbol": "SOXX",
+        "name": "iShares 半導體 ETF",
+        "sector": "ETF - 半導體",
+        "holdings": [
+            ("NVDA", 9.2), ("AVGO", 8.8), ("AMD", 7.4), ("QCOM", 6.5), ("TXN", 6.1),
+            ("AMAT", 5.1), ("MU", 4.7), ("LRCX", 4.5), ("ADI", 4.4), ("KLAC", 4.2),
+            ("INTC", 4.0), ("TSM", 4.0), ("MRVL", 3.7), ("NXPI", 3.5), ("ASML", 3.4),
+            ("MCHP", 3.0), ("ON", 2.4), ("MPWR", 2.3), ("TER", 1.7), ("SWKS", 1.5)
+        ]
     }
 }
 
-TICKERS = list(TW_NAME_MAP.keys()) + [
+# 自動從所有 ETF 成分股提取美股代號，並與核心美股清單合併（避免漏抓成分股）
+US_BASE_TICKERS = [
     "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", 
     "BRK-B", "UNH", "JNJ", "JPM", "V", "XOM", "PG", "MA",
     "COST", "HD", "AVGO", "LLY", "NFLX", "AMD", "ABBV", "CRM",
     "BAC", "CVX", "MRK", "PEP", "ADBE", "TMO", "ACN",
     "MCD", "CSCO", "ABT", "LIN", "WMT", "DHR", "DIS", "VZ",
-    "INTC", "QCOM", "TXN", "AMGN", "IBM", "NOW", "PFE", "INTU"
+    "INTC", "QCOM", "TXN", "AMGN", "IBM", "NOW", "PFE", "INTU",
+    "TMUS", "ISRG", "AMAT", "BKNG", "MU", "LRCX", "ADI", "KLAC",
+    "TSM", "ASML", "MRVL", "NXPI", "MCHP", "ON", "MPWR", "TER", "SWKS"
 ]
+
+ETF_COMP_TICKERS = [
+    comp for cfg in ETF_HOLDINGS_CONFIG.values()
+    for comp, _ in cfg["holdings"]
+    if not comp.endswith(".TW")
+]
+
+TICKERS = list(dict.fromkeys(list(TW_NAME_MAP.keys()) + US_BASE_TICKERS + ETF_COMP_TICKERS))
 
 def calculate_dcf(fcf, growth_rate, wacc=0.09, years=5, terminal_growth=0.02):
     if not fcf or fcf <= 0:
